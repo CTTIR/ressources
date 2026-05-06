@@ -4,16 +4,12 @@ title: "References — Dimensionality reduction"
 
 Foundational and current literature on dimensionality reduction methods relevant to CTIR's [`songR`](https://github.com/CTTIR/songR) and adjacent packages: SONG, UMAP, t-SNE, PHATE, PCA.
 
-::: {.callout-warning}
-## TODO_FILL_BEFORE_DEPLOY
+## Suggested reading
 
-This section is awaiting DOI-verified citations. The CI gate blocks deployment while this marker is present. See `PLAN.md` → "References sections" for the verification workflow.
+- SONG — Tang et al. The primary method paper for the technique implemented in [`songR`](https://github.com/CTTIR/songR).
+- UMAP — McInnes, Healy, Melville.
+- t-SNE — van der Maaten and Hinton.
+- PHATE — Moon et al.
+- Foundational PCA references in the multivariate-analysis context.
 
-Expected entries:
-
-- SONG (Tang et al.) — primary method paper for the technique implemented in `songR`
-- UMAP (McInnes, Healy, Melville)
-- t-SNE (van der Maaten and Hinton)
-- PHATE (Moon et al.)
-- Foundational PCA references in the multivariate-analysis context
-:::
+See the [disclaimer](index.qmd#disclaimer) — this is a starting list, not a curated bibliography.

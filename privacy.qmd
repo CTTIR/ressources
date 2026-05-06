@@ -23,5 +23,4 @@ External links open in the user's browser and are subject to the privacy policy 
 
 For requests under GDPR (right to access, rectification, erasure, etc.) regarding the very limited data this site itself processes (effectively none, beyond the GitHub-Pages server logs):
 
-<!-- TODO_FILL_BEFORE_DEPLOY: contact email for data requests -->
-**Contact:** TODO_FILL_BEFORE_DEPLOY
+**Contact:** [58561665+r-heller@users.noreply.github.com](mailto:58561665+r-heller@users.noreply.github.com)

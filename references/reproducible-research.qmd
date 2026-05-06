@@ -2,14 +2,12 @@
 title: "References — Reproducible research"
 ---
 
-::: {.callout-warning}
-## TODO_FILL_BEFORE_DEPLOY
+## Suggested reading
 
-Awaiting DOI-verified citations. Expected entries:
+- Marwick, B., Boettiger, C., Mullen, L. *Packaging Data Analytical Work Reproducibly Using R (and Friends)*. *The American Statistician*, 2018.
+- Landau, W. M. *The targets R package: a dynamic Make-like function-oriented pipeline toolkit*. JOSS, 2021.
+- Sandve et al. *Ten Simple Rules for Reproducible Computational Research*. PLOS Computational Biology, 2013.
+- Wilson et al. *Best Practices for Scientific Computing*. PLOS Biology, 2014.
+- Quarto — project documentation and methods notes.
 
-- Marwick, B., Boettiger, C., Mullen, L. *Packaging Data Analytical Work Reproducibly Using R (and Friends)*, *The American Statistician*, 2018
-- Landau, W. M. *The targets R package: a dynamic Make-like function-oriented pipeline toolkit*. JOSS, 2021
-- Quarto reference paper / methods note (when published)
-- Sandve et al., *Ten Simple Rules for Reproducible Computational Research*, PLOS Comp Biol, 2013
-- Wilson et al., *Best Practices for Scientific Computing*, PLOS Biol, 2014
-:::
+See the [disclaimer](index.qmd#disclaimer) — this is a starting list, not a curated bibliography.

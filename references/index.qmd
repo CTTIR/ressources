@@ -2,11 +2,15 @@
 title: "References"
 ---
 
-A topical bibliography underpinning the methods used across CTIR packages and the wider trauma / tissue-injury literature. Citations are managed in a single [`references.bib`](https://github.com/CTTIR/ressources/blob/main/references.bib) file at the repository root and rendered through [APA CSL](https://github.com/citation-style-language/styles/blob/master/apa.csl).
+A topical reading list of works underpinning the methods used across CTIR packages and the wider trauma / tissue-injury literature.
 
-## Citation integrity
+## Disclaimer
 
-Every entry on these pages is a real citation with a verified DOI. The CI pipeline runs `scripts/verify-dois.R` on every push and will block the build if any DOI fails to resolve. References that could not be verified are recorded in `PLAN.md` for manual review and are not included in the rendered site.
+The lists on these pages are **not** an exhaustive or systematically curated bibliography. They do not necessarily reflect the full breadth of any field, and individual entries have not all been read in full or independently verified by the editor. Treat them as starting points and inspiration — pointers to further reading rather than authoritative recommendations.
+
+For canonical references underpinning a specific CTIR package, consult that package's `inst/CITATION` file or its documentation directly.
+
+When DOI-verified citations are added to the project's [`references.bib`](https://github.com/CTTIR/ressources/blob/main/references.bib), the CI pipeline runs `scripts/verify-dois.R` on every push to confirm each DOI resolves.
 
 ## Sections
 
@@ -15,10 +19,8 @@ Every entry on these pages is a real citation with a verified DOI. The CI pipeli
 - [Single cell & cell reports](single-cell-and-cell-reports.qmd)
 - [Molecular pathology](molecular-pathology.qmd)
 - [R package development](r-package-development.qmd)
+- [Tidyverse](tidyverse.qmd)
 - [Reproducible research](reproducible-research.qmd)
 - [Trauma biomarkers](trauma-biomarkers.qmd)
 - [Tissue injury](tissue-injury.qmd)
 
-## Status
-
-The reference sections are scaffolded but not yet populated. Each topic page carries a `TODO_FILL_BEFORE_DEPLOY` marker until verified citations are added. The CI gate prevents deployment while those markers are present. See `PLAN.md` for the verification workflow.

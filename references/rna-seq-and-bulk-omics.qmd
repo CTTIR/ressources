@@ -4,15 +4,13 @@ title: "References — RNA-seq & bulk omics"
 
 Foundational literature underpinning CTIR's [`bambamR`](https://github.com/CTTIR/bambamR) and adjacent bulk-omics work.
 
-::: {.callout-warning}
-## TODO_FILL_BEFORE_DEPLOY
+## Suggested reading
 
-Awaiting DOI-verified citations. Expected entries:
+- DESeq2 — Love, Huber, Anders, 2014.
+- edgeR — Robinson, McCarthy, Smyth, 2010.
+- limma-voom — Law, Chen, Shi, Smyth, 2014.
+- STAR aligner — Dobin et al., 2013.
+- salmon — Patro et al., 2017.
+- tximport — Soneson, Love, Robinson, 2015.
 
-- DESeq2 (Love, Huber, Anders, 2014)
-- edgeR (Robinson, McCarthy, Smyth, 2010)
-- limma-voom (Law, Chen, Shi, Smyth, 2014)
-- STAR aligner (Dobin et al., 2013)
-- salmon (Patro et al., 2017)
-- tximport (Soneson, Love, Robinson, 2015)
-:::
+See the [disclaimer](index.qmd#disclaimer) — this is a starting list, not a curated bibliography.

@@ -36,9 +36,7 @@ If a resource doesn't fit cleanly, the entry says so.
 
 ## Editor
 
-<!-- TODO_FILL_BEFORE_DEPLOY: editor name and ORCID -->
-*Maintained by:* TODO_FILL_BEFORE_DEPLOY <br>
-*ORCID:* TODO_FILL_BEFORE_DEPLOY
+*Maintained by:* R. Heller
 
 ## Inspiration
 

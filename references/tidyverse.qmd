@@ -1,0 +1,39 @@
+---
+title: "References — Tidyverse"
+---
+
+The full [tidyverse](https://www.tidyverse.org/) framework — the meta-package, its core members, and the surrounding `r-lib` toolchain that most modern R analyses lean on.
+
+## Meta and design
+
+- Wickham et al. *Welcome to the tidyverse*. JOSS, 2019. The framing paper for the family.
+- Wickham, Çetinkaya-Rundel, Grolemund. *R for Data Science* (2nd ed.). O'Reilly, 2023. The canonical entry-point text.
+
+## Core packages
+
+- [**dplyr**](https://dplyr.tidyverse.org/) — grammar of data manipulation.
+- [**tidyr**](https://tidyr.tidyverse.org/) — tidy-data shape transformations.
+- [**readr**](https://readr.tidyverse.org/) — fast, friendly reading of rectangular data.
+- [**tibble**](https://tibble.tidyverse.org/) — modern reimagining of the data frame.
+- [**purrr**](https://purrr.tidyverse.org/) — functional programming with consistent type contracts.
+- [**stringr**](https://stringr.tidyverse.org/) — string manipulation, ICU-backed.
+- [**forcats**](https://forcats.tidyverse.org/) — tools for working with factors.
+- [**ggplot2**](https://ggplot2.tidyverse.org/) — grammar of graphics.
+- [**lubridate**](https://lubridate.tidyverse.org/) — date and date-time arithmetic.
+
+## Foundational papers
+
+- Wickham. *Tidy Data*. *Journal of Statistical Software*, 2014. The conceptual basis for `tidyr` and the tidyverse data shape.
+- Wickham. *A Layered Grammar of Graphics*. *Journal of Computational and Graphical Statistics*, 2010. The basis for `ggplot2`.
+
+## Adjacent r-lib toolchain
+
+These are not part of the tidyverse meta-package but share its API conventions and maintainers:
+
+- [**rlang**](https://rlang.r-lib.org/) — tidy-eval foundations.
+- [**vctrs**](https://vctrs.r-lib.org/) — typed vector primitives shared across the tidyverse.
+- [**glue**](https://glue.tidyverse.org/) — string interpolation.
+- [**fs**](https://fs.r-lib.org/) — cross-platform filesystem operations.
+- [**httr2**](https://httr2.r-lib.org/) — modern HTTP client.
+
+See the [disclaimer](index.qmd#disclaimer) — this is a starting list, not a curated bibliography.

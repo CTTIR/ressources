@@ -60,6 +60,8 @@ website:
             text: Molecular pathology
           - href: references/r-package-development.qmd
             text: R package development
+          - href: references/tidyverse.qmd
+            text: Tidyverse
           - href: references/reproducible-research.qmd
             text: Reproducible research
           - href: references/trauma-biomarkers.qmd
