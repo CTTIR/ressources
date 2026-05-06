@@ -1,0 +1,24 @@
+---
+title: "References"
+---
+
+A topical bibliography underpinning the methods used across CTIR packages and the wider trauma / tissue-injury literature. Citations are managed in a single [`references.bib`](https://github.com/CTTIR/ressources/blob/main/references.bib) file at the repository root and rendered through [APA CSL](https://github.com/citation-style-language/styles/blob/master/apa.csl).
+
+## Citation integrity
+
+Every entry on these pages is a real citation with a verified DOI. The CI pipeline runs `scripts/verify-dois.R` on every push and will block the build if any DOI fails to resolve. References that could not be verified are recorded in `PLAN.md` for manual review and are not included in the rendered site.
+
+## Sections
+
+- [Dimensionality reduction](dimensionality-reduction.qmd)
+- [RNA-seq & bulk omics](rna-seq-and-bulk-omics.qmd)
+- [Single cell & cell reports](single-cell-and-cell-reports.qmd)
+- [Molecular pathology](molecular-pathology.qmd)
+- [R package development](r-package-development.qmd)
+- [Reproducible research](reproducible-research.qmd)
+- [Trauma biomarkers](trauma-biomarkers.qmd)
+- [Tissue injury](tissue-injury.qmd)
+
+## Status
+
+The reference sections are scaffolded but not yet populated. Each topic page carries a `TODO_FILL_BEFORE_DEPLOY` marker until verified citations are added. The CI gate prevents deployment while those markers are present. See `PLAN.md` for the verification workflow.

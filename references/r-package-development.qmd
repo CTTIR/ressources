@@ -1,0 +1,21 @@
+---
+title: "References — R package development"
+---
+
+Reference works underpinning CTIR's package-development tooling: [`hexmakR`](https://github.com/CTTIR/hexmakR), [`reflowR`](https://github.com/CTTIR/reflowR), [`pressR`](https://github.com/CTTIR/pressR), and the CTIR package style more generally.
+
+## Reference works
+
+- Wickham, H. & Bryan, J. *R Packages: Organize, Test, Document, and Share Your Code* (2nd ed.). O'Reilly, 2023. <https://r-pkgs.org/> [@wickham2023rpackages]
+- R Core Team. *Writing R Extensions*. R Foundation for Statistical Computing. <https://cran.r-project.org/doc/manuals/r-release/R-exts.html> [@rcore_writing_extensions]
+
+::: {.callout-warning}
+## TODO_FILL_BEFORE_DEPLOY
+
+Awaiting additional DOI-verified citations:
+
+- pkgdown — relevant JOSS or methods paper if available
+- roxygen2 — design/methods reference
+- testthat — Wickham, JOSS / *R Journal* article
+- Marwick et al. on research compendia (also listed under reproducible research)
+:::

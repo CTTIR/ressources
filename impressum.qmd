@@ -1,0 +1,35 @@
+---
+title: "Impressum"
+---
+
+Information in accordance with §5 TMG and §18 MStV (Federal Republic of Germany).
+
+## Responsible party
+
+<!-- TODO_IMPRESSUM: name of responsible party -->
+**Name:** TODO_IMPRESSUM
+
+<!-- TODO_IMPRESSUM: postal address -->
+**Postal address:**
+TODO_IMPRESSUM
+
+<!-- TODO_IMPRESSUM: email -->
+**Email:** TODO_IMPRESSUM
+
+<!-- TODO_IMPRESSUM: ORCID -->
+**ORCID:** TODO_IMPRESSUM
+
+<!-- TODO_IMPRESSUM: institutional affiliation if applicable -->
+**Affiliation:** TODO_IMPRESSUM
+
+## Editorial responsibility
+
+The party named above is responsible for the editorial content of this site under §18 (2) MStV.
+
+## Jurisdiction
+
+This site is operated under the law of the Federal Republic of Germany. Disputes are subject to German jurisdiction.
+
+## EU online dispute resolution
+
+The European Commission provides a platform for online dispute resolution (ODR): <https://ec.europa.eu/consumers/odr>. We are not obliged and not willing to participate in dispute resolution proceedings before a consumer arbitration board.

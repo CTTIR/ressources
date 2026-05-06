@@ -1,0 +1,19 @@
+---
+title: "Disclaimer"
+---
+
+## Editorial content
+
+The content of this site has been compiled with care, but no guarantee is given as to its accuracy, completeness, or timeliness. Liability for content under §7 (1) TMG applies only to the editor's own work. Under §§8–10 TMG, the editor is not obliged to monitor transmitted or stored third-party information, or to investigate circumstances that suggest unlawful activity. Obligations to remove or block the use of information under general law remain unaffected. Liability in this respect attaches only from the moment a concrete infringement becomes known. Any such content will be removed promptly.
+
+## External links
+
+This site contains links to external websites maintained by third parties. The editor has no influence over the content of those sites. At the time the links were added, the linked pages were checked for unlawful content and none was apparent. Permanent monitoring of the content of linked pages is not reasonable without concrete evidence of an infringement. If such an infringement becomes known, the link will be removed promptly.
+
+## Citations and recommendations
+
+Citations and recommendations on this site are editorial — they reflect the editor's reading of the literature and ecosystem and do not constitute professional, clinical, or legal advice. Use of any tool, dataset, or method linked from this site is at the user's own risk.
+
+## Trademarks
+
+Software, package, and project names mentioned on this site are the property of their respective owners. Mention here does not imply endorsement.

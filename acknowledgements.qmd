@@ -1,0 +1,27 @@
+---
+title: "Acknowledgements"
+---
+
+## Communities and maintainers
+
+This hub stands on the work of communities that build, maintain, and document the open scientific computing stack. With sincere thanks to:
+
+- The [R Core Team](https://www.r-project.org/contributors.html) and [R Foundation](https://www.r-project.org/foundation/), for sustaining the R language.
+- The [Bioconductor](https://bioconductor.org) project and its contributors, for the world's most coherent biomedical analysis ecosystem.
+- [Posit](https://posit.co) (formerly RStudio), for the IDE, the tidyverse, and Quarto.
+- The [Quarto](https://quarto.org) team, for a publishing system that takes reproducibility seriously.
+- The maintainers of every package referenced on this site — the work shown here is their work, surfaced and contextualised.
+
+## Funders
+
+<!-- TODO_FILL_BEFORE_DEPLOY: funder list -->
+TODO_FILL_BEFORE_DEPLOY — list grants, institutions, or programs that support CTIR work.
+
+## Collaborators
+
+<!-- TODO_FILL_BEFORE_DEPLOY: collaborator list -->
+TODO_FILL_BEFORE_DEPLOY — list institutions, labs, and individuals.
+
+## Visual and architectural inspiration
+
+The structure, navbar pattern, footer, and curated-list approach of this site are adapted from [`boulingua/ressources`](https://github.com/boulingua/ressources). Credit to its editor for the design language. CTIR's hub diverges in being monolingual and in adding research-specific sections (CTIR packages, References).

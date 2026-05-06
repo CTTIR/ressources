@@ -1,0 +1,81 @@
+---
+title: "Writing & publishing"
+---
+
+Tooling for academic writing and the surrounding citation / identifier infrastructure.
+
+## Authoring
+
+::: {.resource-entry}
+### [Quarto](https://quarto.org/)
+License: OSS · MIT  ·  Maintainer: Posit
+
+Manuscripts, theses, and books from the same source as your analyses. Native cross-references, citations, and footnotes. Reach for the `manuscript` project type when targeting a journal.
+:::
+
+::: {.resource-entry}
+### [LaTeX (TeX Live)](https://tug.org/texlive/)
+License: OSS · LPPL  ·  Maintainer: TeX Users Group
+
+The substrate for any non-trivial PDF rendering. Quarto delegates to it for PDF output; useful to know directly when the journal template diverges from defaults.
+:::
+
+::: {.resource-entry}
+### [Overleaf](https://www.overleaf.com/)
+License: source OSS · AGPL-3.0 (community edition); hosted service is freemium  ·  Maintainer: Overleaf / Digital Science
+
+Collaborative LaTeX editing in the browser. The community edition is genuinely open source — listed on those grounds.
+:::
+
+::: {.resource-entry}
+### [rticles](https://github.com/rstudio/rticles)
+License: OSS · GPL-3.0  ·  Maintainer: Posit
+
+R Markdown templates for journal articles. Quarto journal templates exist separately and overlap heavily; `rticles` remains useful for journals that have not migrated.
+:::
+
+::: {.resource-entry}
+### [bookdown](https://bookdown.org/) · [Quarto Books](https://quarto.org/docs/books/)
+License: OSS · GPL-3.0 / MIT  ·  Maintainer: Posit
+
+Long-form publishing. New projects should default to Quarto Books; `bookdown` remains for legacy works.
+:::
+
+## References and citations
+
+::: {.resource-entry}
+### [Zotero](https://www.zotero.org/)
+License: OSS · AGPL-3.0  ·  Maintainer: Roy Rosenzweig Center / community
+
+The reference manager. Browser-connector capture, group libraries, and a healthy plugin ecosystem.
+:::
+
+::: {.resource-entry}
+### [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/)
+License: OSS · MIT  ·  Maintainer: Emiliano Heyns
+
+Auto-generates stable citation keys, exports clean BibTeX/BibLaTeX, and supports auto-export to a watched `.bib` file. Effectively required for serious LaTeX/Quarto work with Zotero.
+:::
+
+::: {.resource-entry}
+### [Citation Style Language (CSL)](https://citationstyles.org/) · [CSL repository](https://github.com/citation-style-language/styles)
+License: CC · CC BY-SA 3.0 (styles)  ·  Maintainer: CSL project
+
+The XML-based citation-formatting language. The official style repository carries thousands of journal styles.
+:::
+
+## Identifiers
+
+::: {.resource-entry}
+### [ORCID](https://orcid.org/)
+License: service · CC0 (public data)  ·  Maintainer: ORCID, Inc.
+
+Persistent author identifier. Required by most journals and funders; cite yours on every artefact.
+:::
+
+::: {.resource-entry}
+### [ROR — Research Organization Registry](https://ror.org/)
+License: PD · CC0  ·  Maintainer: ROR community
+
+Persistent identifier for research institutions. Use it in affiliations and dataset metadata.
+:::

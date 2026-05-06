@@ -1,0 +1,45 @@
+---
+title: "About"
+---
+
+## What you'll find here
+
+A curated, hand-picked hub of computational tooling and reading material for biomedical research — focused on R packaging, multi-omics analysis, reproducible workflows, and the methods underpinning trauma and tissue-injury science. Every entry has been editorially selected. Nothing on this site is auto-generated or pulled from a feed.
+
+The hub exists to save researchers the discovery cost: instead of trawling a hundred package indexes and journal listings, you get a short, opinionated shortlist with one paragraph of context per item.
+
+## What's excluded
+
+- **Commercial vendors and paywalled tools.** If the resource requires a licence to use the linked-to material, it doesn't appear here.
+- **Closed-source software** without a credible open alternative path.
+- **Inactive or abandoned projects** — the rough cutoff is no commits or releases in the last 24 months, unless the package is feature-complete and demonstrably stable.
+- **Marketing pages, vendor whitepapers, and aggregator blogs.**
+
+## Curation principles
+
+1. **Open source preferred.** Code under an OSI-approved licence (MIT, Apache 2.0, GPL, BSD) takes precedence over closed alternatives.
+2. **Reproducible by design.** Tools that make the analysis trail auditable — `targets`, `renv`, Quarto, container-based pipelines — are over-represented here on purpose.
+3. **Peer reviewed where applicable.** For methods packages, a published reference is expected.
+4. **Actively maintained.** Recent commits or releases, responsive issue tracker.
+5. **Verifiable provenance.** Every link has been resolved at build time; every citation has been DOI-checked. Items that fail verification do not appear on the rendered site.
+
+## Licence taxonomy for listed resources
+
+Each external entry carries one of:
+
+- **OSS** — open-source software. The specific licence (MIT, Apache 2.0, GPL-3.0, BSD-2-Clause, etc.) is named per entry.
+- **CC** — Creative Commons content (datasets, documentation, figures). The specific variant (CC BY 4.0, CC BY-SA 4.0, CC0) is named.
+- **PD** — public domain works, including most US-government-released datasets.
+- **OA** — gold open-access publications with an explicit reuse licence.
+
+If a resource doesn't fit cleanly, the entry says so.
+
+## Editor
+
+<!-- TODO_FILL_BEFORE_DEPLOY: editor name and ORCID -->
+*Maintained by:* TODO_FILL_BEFORE_DEPLOY <br>
+*ORCID:* TODO_FILL_BEFORE_DEPLOY
+
+## Inspiration
+
+The visual language and architecture of this site are adapted from [`boulingua/ressources`](https://github.com/boulingua/ressources) — a curated language-learning hub that solved the same editorial problem for a different domain. CTIR's hub is monolingual (English) where boulingua is tri-lingual; the audience here is the international scientific community.

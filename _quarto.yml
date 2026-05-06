@@ -1,0 +1,113 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - "assets/**"
+    - "LICENSE"
+
+execute:
+  freeze: true
+
+website:
+  title: "#ressources"
+  description: "Curated computational biomedical research resources — CTIR (Computational Trauma and Tissue Injury Research)."
+  site-url: https://cttir.github.io/ressources/
+  repo-url: https://github.com/CTTIR/ressources
+  repo-actions: [edit, source, issue]
+  page-navigation: true
+  back-to-top-navigation: true
+  search:
+    location: navbar
+    type: overlay
+
+  navbar:
+    pinned: true
+    background: light
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - text: Ressources
+        menu:
+          - href: ressources/index.qmd
+            text: Overview
+          - href: ressources/cttir-packages.qmd
+            text: CTIR packages
+          - href: ressources/r-ecosystem.qmd
+            text: R ecosystem
+          - href: ressources/reproducibility.qmd
+            text: Reproducibility
+          - href: ressources/stats-and-ml.qmd
+            text: Statistics & ML
+          - href: ressources/omics-and-bioinformatics.qmd
+            text: Omics & bioinformatics
+          - href: ressources/writing-and-publishing.qmd
+            text: Writing & publishing
+          - href: ressources/data-sources.qmd
+            text: Data sources
+      - text: References
+        menu:
+          - href: references/index.qmd
+            text: Overview
+          - href: references/dimensionality-reduction.qmd
+            text: Dimensionality reduction
+          - href: references/rna-seq-and-bulk-omics.qmd
+            text: RNA-seq & bulk omics
+          - href: references/single-cell-and-cell-reports.qmd
+            text: Single cell
+          - href: references/molecular-pathology.qmd
+            text: Molecular pathology
+          - href: references/r-package-development.qmd
+            text: R package development
+          - href: references/reproducible-research.qmd
+            text: Reproducible research
+          - href: references/trauma-biomarkers.qmd
+            text: Trauma biomarkers
+          - href: references/tissue-injury.qmd
+            text: Tissue injury
+      - href: acknowledgements.qmd
+        text: Acknowledgements
+      - href: impressum.qmd
+        text: Impressum
+    right:
+      - icon: github
+        href: https://github.com/CTTIR/ressources
+        aria-label: GitHub repository
+
+  page-footer:
+    background: light
+    left: |
+      © 2026 CTIR · Code [MIT](LICENSE) · Content [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+    center:
+      - href: impressum.qmd
+        text: Impressum
+      - href: privacy.qmd
+        text: Privacy
+      - href: disclaimer.qmd
+        text: Disclaimer
+    right: |
+      Built with [Quarto](https://quarto.org)
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles.scss]
+      dark: [darkly, styles.scss]
+    css: styles.scss
+    toc: true
+    toc-depth: 3
+    toc-location: right
+    code-copy: true
+    code-overflow: wrap
+    smooth-scroll: true
+    anchor-sections: true
+    link-external-newwindow: true
+    link-external-icon: true
+    mainfont: "Source Sans 3, system-ui, sans-serif"
+    monofont: "JetBrains Mono, ui-monospace, SFMono-Regular, monospace"
+
+bibliography: references.bib
+csl: apa.csl
+
+lang: en

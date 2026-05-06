@@ -1,0 +1,62 @@
+---
+title: "CTIR packages"
+---
+
+Every public R package in the [CTTIR](https://github.com/CTTIR) GitHub organization. Rendered from `_data/cttir-repos.json`, which is refreshed by `scripts/fetch-cttir-repos.R` and validated in CI.
+
+```{r}
+#| label: cttir-packages-table
+#| echo: false
+#| message: false
+#| warning: false
+
+repos <- jsonlite::read_json("../_data/cttir-repos.json", simplifyVector = FALSE)
+
+# Filter: keep R packages only. Excludes the meta/non-package repos.
+exclude <- c("ressources", "website", ".github", "pwa-quest", "courses", "tutorials")
+pkgs <- Filter(function(r) {
+  identical(r$language, "R") && !(r$name %in% exclude) &&
+    isFALSE(r$archived) && isFALSE(r$fork)
+}, repos)
+
+# Sort alphabetically for stable output
+pkgs <- pkgs[order(vapply(pkgs, function(r) r$name, character(1)))]
+
+format_license <- function(r) {
+  if (is.null(r$license) || is.null(r$license$spdx_id) ||
+      identical(r$license$spdx_id, "NOASSERTION")) {
+    "—"
+  } else {
+    r$license$spdx_id
+  }
+}
+
+format_homepage <- function(r) {
+  if (is.null(r$homepage) || !nzchar(r$homepage)) {
+    "—"
+  } else {
+    sprintf("[site](%s)", r$homepage)
+  }
+}
+
+format_desc <- function(r) {
+  if (is.null(r$description) || !nzchar(r$description)) "—" else r$description
+}
+
+df <- data.frame(
+  Package    = vapply(pkgs, function(r) sprintf("[`%s`](%s)", r$name, r$html_url), character(1)),
+  Description = vapply(pkgs, format_desc, character(1)),
+  License    = vapply(pkgs, format_license, character(1)),
+  Site       = vapply(pkgs, format_homepage, character(1)),
+  stringsAsFactors = FALSE,
+  check.names = FALSE
+)
+
+knitr::kable(df, format = "markdown")
+```
+
+## Notes
+
+- License `—` means GitHub's licence detector did not find an SPDX-identified `LICENSE` file in the repository's expected location. This is editorial debt to resolve in each package.
+- Description `—` means the GitHub repository description field is blank.
+- The list is generated at build time. To refresh the underlying inventory, run `Rscript scripts/fetch-cttir-repos.R` and commit the updated `_data/cttir-repos.json`.

@@ -1,0 +1,15 @@
+# Commercial / paywalled domains to block from ressources/*.qmd entries.
+# CI grep is precise — these patterns must match URLs that point to paywalled
+# content. Open-access journals on these publisher domains are allowed only
+# when the entry carries an explicit `OA` licence tag in its meta line.
+#
+# Maintain this list when new vendors creep in. Open a PR with a justification.
+
+linkedin.com/sales
+sciencedirect.com/journal
+springer.com/journal
+link.springer.com/article
+onlinelibrary.wiley.com/doi
+academic.oup.com/article
+nature.com/articles
+cell.com/article

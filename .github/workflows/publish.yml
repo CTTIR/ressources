@@ -1,0 +1,48 @@
+name: publish
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.5.57
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.4'
+
+      - name: Cache R packages
+        uses: actions/cache@v4
+        with:
+          path: ~/R/library
+          key: ${{ runner.os }}-r-${{ hashFiles('**/_quarto.yml') }}
+
+      - name: Install R dependencies
+        run: |
+          Rscript -e 'install.packages(c("jsonlite","knitr","rmarkdown"), repos="https://cloud.r-project.org")'
+
+      - name: Render
+        run: quarto render
+
+      - name: Publish to gh-pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+          path: .
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

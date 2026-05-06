@@ -1,0 +1,19 @@
+---
+title: "References — Trauma biomarkers"
+---
+
+Domain-specific reading list on trauma biomarkers: discovery, validation, clinical utility.
+
+::: {.callout-warning}
+## TODO_FILL_BEFORE_DEPLOY
+
+Awaiting curated, DOI-verified reading list. PubMed search and editorial selection required — citation integrity rules out hallucinated entries.
+
+Suggested coverage areas to assemble:
+
+- Acute-phase proteins and trauma severity
+- Cytokine signatures and trauma-induced coagulopathy
+- Endotheliopathy of trauma (syndecan-1, thrombomodulin, etc.)
+- Multi-omics biomarker discovery in polytrauma
+- Reporting standards for biomarker studies (REMARK, STARD)
+:::

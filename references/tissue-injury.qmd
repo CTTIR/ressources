@@ -1,0 +1,19 @@
+---
+title: "References — Tissue injury"
+---
+
+Domain-specific reading list on tissue injury: mechanisms, repair, pathology, computational modelling.
+
+::: {.callout-warning}
+## TODO_FILL_BEFORE_DEPLOY
+
+Awaiting curated, DOI-verified reading list. PubMed search and editorial selection required.
+
+Suggested coverage areas to assemble:
+
+- Damage-associated molecular patterns (DAMPs) and sterile inflammation
+- Tissue regeneration vs. fibrotic repair
+- Histopathology scoring systems and inter-rater variability
+- Spatial transcriptomics in injury contexts
+- Computational models of wound healing and repair dynamics
+:::

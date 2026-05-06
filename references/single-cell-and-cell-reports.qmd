@@ -1,0 +1,17 @@
+---
+title: "References — Single cell & cell reports"
+---
+
+Literature underpinning CTIR's [`cellreportR`](https://github.com/CTTIR/cellreportR) and adjacent single-cell methods.
+
+::: {.callout-warning}
+## TODO_FILL_BEFORE_DEPLOY
+
+Awaiting DOI-verified citations. Expected entries:
+
+- Seurat (Hao et al., current edition)
+- SingleCellExperiment / Bioconductor single-cell stack (Amezquita et al., 2020)
+- scran normalisation (Lun, McCarthy, Marioni, 2016)
+- scater QC (McCarthy, Campbell, Lun, Wills, 2017)
+- Orchestrating Single-Cell Analysis with Bioconductor (OSCA) book chapters as appropriate
+:::

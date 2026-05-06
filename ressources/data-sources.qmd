@@ -1,0 +1,90 @@
+---
+title: "Data sources"
+---
+
+Public datasets and APIs relevant to multi-omics, biomarker, and trauma / tissue-injury research. Each entry notes the licence terms because they vary widely.
+
+## Literature and citation
+
+::: {.resource-entry}
+### [PubMed](https://pubmed.ncbi.nlm.nih.gov/) · [E-utilities](https://www.ncbi.nlm.nih.gov/books/NBK25501/)
+License: PD (most metadata, US-government work)  ·  Maintainer: NCBI / NLM
+
+The biomedical-literature index and its programmatic API. Metadata is free to redistribute; full-text articles follow each publisher's licence.
+:::
+
+::: {.resource-entry}
+### [Europe PMC](https://europepmc.org/)
+License: varies; metadata under CC0 / CC BY  ·  Maintainer: EMBL-EBI
+
+Mirror and extension of PubMed Central with broader open-access full-text coverage and a documented REST API.
+:::
+
+## Genomics repositories
+
+::: {.resource-entry}
+### [NCBI GEO — Gene Expression Omnibus](https://www.ncbi.nlm.nih.gov/geo/)
+License: PD (US-government work)  ·  Maintainer: NCBI
+
+The largest functional-genomics archive: arrays, RNA-seq, ChIP-seq, ATAC-seq. Per-submission deposit terms govern reuse; most data are openly available.
+:::
+
+::: {.resource-entry}
+### [ArrayExpress / BioStudies](https://www.ebi.ac.uk/biostudies/arrayexpress)
+License: CC0 (most studies)  ·  Maintainer: EMBL-EBI
+
+The European functional-genomics archive, now part of BioStudies. Many studies are dual-deposited with GEO.
+:::
+
+::: {.resource-entry}
+### [Ensembl](https://www.ensembl.org/)
+License: varies; most annotation under Apache-2.0 / CC0  ·  Maintainer: EMBL-EBI
+
+Comprehensive genome annotations and a stable REST API. The reference for transcript-level annotation in many R/Bioconductor pipelines.
+:::
+
+::: {.resource-entry}
+### [UCSC Genome Browser](https://genome.ucsc.edu/)
+License: varies; track licences declared per dataset  ·  Maintainer: UCSC
+
+Genome visualisation and a large library of annotation tracks. The Table Browser exposes the underlying tables programmatically.
+:::
+
+## Proteins and pathways
+
+::: {.resource-entry}
+### [UniProt](https://www.uniprot.org/)
+License: CC · CC BY 4.0  ·  Maintainer: UniProt Consortium (EBI / SIB / PIR)
+
+The reference protein-sequence and functional-annotation database. Programmatic access via REST and SPARQL.
+:::
+
+::: {.resource-entry}
+### [Reactome](https://reactome.org/)
+License: CC · CC BY 4.0  ·  Maintainer: Reactome Consortium
+
+Curated biological-pathway database with R access via [`ReactomePA`](https://bioconductor.org/packages/ReactomePA/).
+:::
+
+## Clinical
+
+::: {.resource-entry}
+### [ClinicalTrials.gov](https://clinicaltrials.gov/)
+License: PD (US-government work)  ·  Maintainer: NIH / NLM
+
+Registry of clinical trials worldwide. The API v2 is well documented and returns structured study, eligibility, intervention, and outcome data.
+:::
+
+::: {.resource-entry}
+### [OMIM — Online Mendelian Inheritance in Man](https://www.omim.org/)
+License: registration required for API; site browsable openly; redistribution restricted  ·  Maintainer: Johns Hopkins University
+
+Catalogue of human genes and genetic disorders. The redistribution restrictions are real — read the licence before mirroring data.
+:::
+
+::: {.resource-entry}
+### [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/)
+License: PD (NCBI submissions)  ·  Maintainer: NCBI
+
+Aggregated reports of relationships between human variants and phenotypes. Used directly by CTIR's [`molpathR`](https://github.com/CTTIR/molpathR) variant-annotation flow.
+:::

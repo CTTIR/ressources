@@ -1,0 +1,5 @@
+# Domains the link checker should skip. Document each entry.
+# Add sparingly — broken external links should fail the build.
+
+# OMIM aggressively bot-blocks; entries here are still verified manually before commit.
+^https?://(www\.)?omim\.org/?$

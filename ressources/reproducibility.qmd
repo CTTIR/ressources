@@ -1,0 +1,76 @@
+---
+title: "Reproducibility"
+---
+
+Tools that make an analysis trail auditable from raw data to figure. The shortlist is intentionally narrow — the goal is to pick a stack and use it, not to compare twenty options.
+
+## Authoring
+
+::: {.resource-entry}
+### [Quarto](https://quarto.org/)
+License: OSS · MIT  ·  Maintainer: Posit
+
+The successor to R Markdown. Renders the same document to HTML, PDF, Word, slides, books, and websites. Native multi-language support (R, Python, Julia, Observable). This site is built with it.
+:::
+
+::: {.resource-entry}
+### [R Markdown](https://rmarkdown.rstudio.com/)
+License: OSS · GPL-3.0  ·  Maintainer: Posit
+
+Still actively maintained. New projects should default to Quarto; existing R Markdown projects do not need to migrate urgently.
+:::
+
+::: {.resource-entry}
+### [workflowr](https://workflowr.github.io/workflowr/)
+License: OSS · MIT  ·  Maintainer: John Blischak
+
+Builds a reproducible-by-construction website from an R-Markdown analysis directory: every page records a git commit, RNG seed, and session info. CTIR's [`reflowR`](https://github.com/CTTIR/reflowR) provides custom themes for it.
+:::
+
+## Pipelines
+
+::: {.resource-entry}
+### [targets](https://docs.ropensci.org/targets/)
+License: OSS · MIT  ·  Maintainer: Will Landau / rOpenSci
+
+See the [R ecosystem](r-ecosystem.qmd) page. Default choice for non-trivial R pipelines.
+:::
+
+## Environment and dependencies
+
+::: {.resource-entry}
+### [renv](https://rstudio.github.io/renv/)
+License: OSS · MIT  ·  Maintainer: Posit
+
+R project lockfile. Records exact package versions; restores them on another machine.
+:::
+
+::: {.resource-entry}
+### [Rocker](https://rocker-project.org/)
+License: OSS · GPL-2.0 (images) / project content varies  ·  Maintainer: Rocker Project
+
+Curated Docker images for R, including Bioconductor-flavoured images and `tidyverse`-preinstalled stacks. The path of least resistance to a reproducible container.
+:::
+
+## Archival and sharing
+
+::: {.resource-entry}
+### [Zenodo](https://zenodo.org/)
+License: PD (service); content varies  ·  Maintainer: CERN
+
+DOI minting for code, data, and supplementary material. Integrates directly with GitHub for one-click archival of releases.
+:::
+
+::: {.resource-entry}
+### [OSF — Open Science Framework](https://osf.io/)
+License: OSS · Apache-2.0 (platform); content varies  ·  Maintainer: Center for Open Science
+
+Project-centric hub for protocols, preregistration, code, and data. Useful for the ancillary materials that don't fit on Zenodo.
+:::
+
+::: {.resource-entry}
+### [Binder](https://mybinder.org/)
+License: OSS · BSD-3-Clause  ·  Maintainer: Project Jupyter
+
+Builds an executable container from a public repo and serves it as a notebook in the browser. Lowest-friction "click to run my analysis" link for reviewers.
+:::

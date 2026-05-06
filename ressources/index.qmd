@@ -1,0 +1,33 @@
+---
+title: "Ressources"
+---
+
+Curated lists, grouped by topic. Each entry carries a one- or two-sentence editorial note explaining why it is here.
+
+## Sections
+
+- [**CTIR packages**](cttir-packages.qmd) — every public R package in the [CTTIR organization](https://github.com/CTTIR), generated from the live repo inventory.
+- [**R ecosystem**](r-ecosystem.qmd) — tidyverse, Bioconductor, package-development tooling, and the libraries that show up across most CTIR work.
+- [**Reproducibility**](reproducibility.qmd) — Quarto, `targets`, `renv`, container images, archival.
+- [**Statistics & ML**](stats-and-ml.qmd) — modelling stacks for biomarkers, multi-omics, and survival analysis.
+- [**Omics & bioinformatics**](omics-and-bioinformatics.qmd) — domain-specific Bioconductor stacks (single cell, proteomics, metabolomics, genomics).
+- [**Writing & publishing**](writing-and-publishing.qmd) — Quarto, LaTeX, Zotero, ORCID, ROR, journal templates.
+- [**Data sources**](data-sources.qmd) — public datasets and APIs relevant to trauma / multi-omics work.
+
+## Course material from CTIR
+
+Two CTIR repositories deliver teaching material rather than software packages and are hosted separately:
+
+::: {.resource-entry}
+### [courses](https://github.com/CTTIR/courses)
+[Site](https://cttir.github.io/courses/) · License: OSS · MIT  ·  Maintainer: CTTIR
+
+Course material maintained by the CTIR group. Linked here so users land on it without searching the org by hand.
+:::
+
+::: {.resource-entry}
+### [tutorials](https://github.com/CTTIR/tutorials)
+[Site](https://cttir.github.io/tutorials/) · License: OSS · MIT  ·  Maintainer: CTTIR
+
+Standalone tutorials covering practical workflows.
+:::

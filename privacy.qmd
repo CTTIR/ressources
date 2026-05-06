@@ -1,0 +1,27 @@
+---
+title: "Privacy"
+---
+
+This site is a static website hosted on [GitHub Pages](https://pages.github.com/). It is intentionally minimal in its data handling.
+
+## What this site does not do
+
+- **No cookies** are set by this site.
+- **No analytics** services are loaded (no Google Analytics, Plausible, Matomo, or similar).
+- **No tracking pixels**, fingerprinting, or third-party scripts beyond the static assets needed to render the page.
+- **No newsletter, no contact form, no account system.** There is nothing to opt into.
+
+## What GitHub Pages does
+
+The site is served by GitHub Pages. GitHub may log IP addresses and other request metadata server-side as part of normal web-server operation, outside the control of this site's editor. See [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) for details.
+
+## External links
+
+External links open in the user's browser and are subject to the privacy policy of the target site. The editor of this hub has no control over what those sites do.
+
+## Data subject requests
+
+For requests under GDPR (right to access, rectification, erasure, etc.) regarding the very limited data this site itself processes (effectively none, beyond the GitHub-Pages server logs):
+
+<!-- TODO_FILL_BEFORE_DEPLOY: contact email for data requests -->
+**Contact:** TODO_FILL_BEFORE_DEPLOY

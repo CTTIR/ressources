@@ -1,0 +1,92 @@
+---
+title: "Statistics & ML"
+---
+
+Modelling stacks relevant to biomarker discovery, multi-omics integration, and survival analysis. Curated for the trauma / tissue-injury context — heavy on regularised models, mixed effects, and Bayesian workflows.
+
+## Multi-omics integration
+
+::: {.resource-entry}
+### [mixOmics](http://mixomics.org/)
+License: OSS · GPL-3.0  ·  Maintainer: Kim-Anh Lê Cao et al.
+
+Sparse multivariate methods for omics integration: PLS-DA, sPLS, DIABLO, MINT. The de-facto package when the question is "what jointly varies across two or more omics blocks?"
+:::
+
+## Modelling frameworks
+
+::: {.resource-entry}
+### [tidymodels](https://www.tidymodels.org/)
+License: OSS · MIT  ·  Maintainer: Posit
+
+Modern, opinionated modelling meta-package. Resampling, tuning, recipe-based preprocessing, and a unified `parsnip` interface across model engines.
+:::
+
+::: {.resource-entry}
+### [mlr3](https://mlr3.mlr-org.com/)
+License: OSS · LGPL-3.0  ·  Maintainer: mlr-org
+
+Object-oriented machine-learning framework with strong support for nested resampling, pipelines, and benchmarking. The choice when method comparison or pipeline composition is the central concern.
+:::
+
+::: {.resource-entry}
+### [caret](https://topepo.github.io/caret/)
+License: OSS · GPL-2.0 / GPL-3.0  ·  Maintainer: Max Kuhn
+
+Predecessor to `tidymodels`. Still widely used in legacy code and books; new projects should default to `tidymodels`.
+:::
+
+## Specific model families
+
+::: {.resource-entry}
+### [glmnet](https://glmnet.stanford.edu/)
+License: OSS · GPL-2.0  ·  Maintainer: Trevor Hastie / Jerome Friedman et al.
+
+Lasso, ridge, and elastic-net generalised linear models. The reference implementation; cited in essentially every regularised-regression methods paper.
+:::
+
+::: {.resource-entry}
+### [randomForest](https://cran.r-project.org/package=randomForest) · [ranger](https://imbs-hl.github.io/ranger/)
+License: OSS · GPL-2.0 / GPL-3.0  ·  Maintainer: Liaw / Wright
+
+`ranger` is the fast, multithreaded reimplementation; reach for it when row counts get into six figures.
+:::
+
+::: {.resource-entry}
+### [xgboost](https://xgboost.readthedocs.io/)
+License: OSS · Apache-2.0  ·  Maintainer: DMLC
+
+Gradient-boosted trees. Native R interface; the workhorse for tabular prediction baselines.
+:::
+
+## Survival analysis
+
+::: {.resource-entry}
+### [survival](https://cran.r-project.org/package=survival)
+License: OSS · LGPL-2.0  ·  Maintainer: Terry Therneau
+
+The reference R survival library. Cox regression, parametric survival, frailty models, multi-state models — the canonical implementation.
+:::
+
+::: {.resource-entry}
+### [survminer](https://rpkgs.datanovia.com/survminer/)
+License: OSS · GPL-2.0  ·  Maintainer: Alboukadel Kassambara
+
+`ggplot2` Kaplan–Meier plots, forest plots, and diagnostic plots for `survival` and related models. Almost mandatory for publication-ready survival figures.
+:::
+
+## Mixed-effects and Bayesian
+
+::: {.resource-entry}
+### [lme4](https://cran.r-project.org/package=lme4)
+License: OSS · GPL-2.0  ·  Maintainer: Douglas Bates et al.
+
+Linear and generalised linear mixed-effects models. The default frequentist mixed-model engine in R.
+:::
+
+::: {.resource-entry}
+### [Stan](https://mc-stan.org/) · [brms](https://paul-buerkner.github.io/brms/) · [rstanarm](https://mc-stan.org/rstanarm/)
+License: OSS · BSD-3-Clause / GPL-2.0+  ·  Maintainer: Stan development team
+
+Probabilistic programming for full-Bayesian inference. `brms` provides a `lme4`-flavoured formula interface that compiles to Stan; `rstanarm` precompiles common GLM/GLMM templates.
+:::

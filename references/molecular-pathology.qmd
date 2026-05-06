@@ -1,0 +1,18 @@
+---
+title: "References — Molecular pathology"
+---
+
+Literature underpinning CTIR's [`molpathR`](https://github.com/CTTIR/molpathR): variant analysis, NGS file-format specifications, and clinical-genomics knowledge bases.
+
+::: {.callout-warning}
+## TODO_FILL_BEFORE_DEPLOY
+
+Awaiting DOI-verified citations. Expected entries:
+
+- VCF format specification (Danecek et al., 2011)
+- BAM / SAMtools (Li et al., 2009)
+- GATK Best Practices (Van der Auwera et al., 2013, plus updated current-version reference)
+- ClinVar (Landrum et al., current edition)
+- OncoKB (Chakravarty et al., 2017)
+- AMP/ASCO/CAP variant interpretation guidelines (Li et al., 2017)
+:::

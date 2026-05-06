@@ -1,0 +1,113 @@
+---
+title: "R ecosystem"
+---
+
+The R libraries and projects that show up across most CTIR work. All open source, all actively maintained at the time of writing.
+
+## Core language and project
+
+::: {.resource-entry}
+### [R](https://www.r-project.org/)
+License: OSS · GPL-2.0 / GPL-3.0  ·  Maintainer: R Core Team
+
+The language and its base distribution. Every CTIR package depends on it, directly or transitively.
+:::
+
+::: {.resource-entry}
+### [Bioconductor](https://bioconductor.org/)
+License: varies (Artistic-2.0 default for member packages)  ·  Maintainer: Bioconductor Core Team
+
+The coherent biomedical-analysis ecosystem on top of R. Twice-yearly release cycle, shared classes (`SummarizedExperiment`, `MultiAssayExperiment`, `SingleCellExperiment`), and a peer-review process for new packages.
+:::
+
+## Tidyverse and adjacent
+
+::: {.resource-entry}
+### [tidyverse](https://www.tidyverse.org/)
+License: OSS · MIT  ·  Maintainer: Posit / community
+
+A meta-package that loads `dplyr`, `tidyr`, `readr`, `purrr`, `tibble`, `stringr`, `forcats`, and `ggplot2`. The de-facto data-manipulation idiom in modern R.
+:::
+
+::: {.resource-entry}
+### [data.table](https://rdatatable.gitlab.io/data.table/)
+License: OSS · MPL-2.0  ·  Maintainer: data.table contributors
+
+The high-performance alternative to `dplyr`. Worth reaching for when working set sizes start to hurt.
+:::
+
+## Package development
+
+::: {.resource-entry}
+### [usethis](https://usethis.r-lib.org/) · [devtools](https://devtools.r-lib.org/)
+License: OSS · MIT  ·  Maintainer: Posit
+
+The package-author's day-to-day toolkit: scaffolding, install/load workflows, release helpers.
+:::
+
+::: {.resource-entry}
+### [roxygen2](https://roxygen2.r-lib.org/)
+License: OSS · MIT  ·  Maintainer: Posit
+
+Inline documentation generator. Function-level docstrings compile to `man/*.Rd`. Standard across modern R packages.
+:::
+
+::: {.resource-entry}
+### [testthat](https://testthat.r-lib.org/)
+License: OSS · MIT  ·  Maintainer: Posit
+
+The unit-testing framework. Edition 3 is the current default; expect snapshot tests and parallel execution.
+:::
+
+::: {.resource-entry}
+### [pkgdown](https://pkgdown.r-lib.org/)
+License: OSS · MIT  ·  Maintainer: Posit
+
+Generates documentation websites for R packages. Every CTIR package's `gh-pages` site is built with it.
+:::
+
+::: {.resource-entry}
+### [lintr](https://lintr.r-lib.org/) · [styler](https://styler.r-lib.org/)
+License: OSS · MIT  ·  Maintainer: lintr / styler authors
+
+Linting and code style enforcement. Pair them in pre-commit hooks.
+:::
+
+## Pipelines and reproducibility
+
+::: {.resource-entry}
+### [targets](https://docs.ropensci.org/targets/)
+License: OSS · MIT  ·  Maintainer: Will Landau / rOpenSci
+
+Make-style pipeline framework for R. Tracks dependencies, skips unchanged steps, and parallelises across local and HPC backends. Treat it as the default for any analysis with more than ~five non-trivial stages.
+:::
+
+::: {.resource-entry}
+### [renv](https://rstudio.github.io/renv/)
+License: OSS · MIT  ·  Maintainer: Posit
+
+Project-local package libraries with a lockfile. The minimal viable reproducibility layer for an R project.
+:::
+
+## Bioconductor flagships relevant to multi-omics
+
+::: {.resource-entry}
+### [DESeq2](https://bioconductor.org/packages/DESeq2/)
+License: OSS · LGPL-3.0  ·  Maintainer: Michael Love et al.
+
+Differential-expression analysis for RNA-seq counts using negative binomial generalised linear models with shrunken dispersion and effect size estimates.
+:::
+
+::: {.resource-entry}
+### [edgeR](https://bioconductor.org/packages/edgeR/) · [limma](https://bioconductor.org/packages/limma/)
+License: OSS · GPL-2.0  ·  Maintainer: WEHI Bioinformatics
+
+The other two members of the de-facto bulk-RNA-seq differential-expression triumvirate. `limma-voom` remains the standard linear-model route.
+:::
+
+::: {.resource-entry}
+### [SummarizedExperiment](https://bioconductor.org/packages/SummarizedExperiment/) · [MultiAssayExperiment](https://bioconductor.org/packages/MultiAssayExperiment/)
+License: OSS · Artistic-2.0  ·  Maintainer: Bioconductor Core Team
+
+The shared S4 containers that hold matrix-shaped assays plus row/column metadata. Most Bioconductor pipelines speak this idiom.
+:::

@@ -1,0 +1,85 @@
+---
+title: "Omics & bioinformatics"
+---
+
+Domain-specific tooling, primarily Bioconductor. Listed by data modality.
+
+## Single-cell
+
+::: {.resource-entry}
+### [Seurat](https://satijalab.org/seurat/)
+License: OSS · MIT  ·  Maintainer: Satija lab
+
+The dominant single-cell-RNA-seq toolkit in R. Quality control, normalisation, integration, dimensionality reduction, clustering, differential expression, and trajectory analysis in one object.
+:::
+
+::: {.resource-entry}
+### [SingleCellExperiment](https://bioconductor.org/packages/SingleCellExperiment/) · [scran](https://bioconductor.org/packages/scran/) · [scater](https://bioconductor.org/packages/scater/)
+License: OSS · GPL-3.0  ·  Maintainer: Bioconductor
+
+The Bioconductor single-cell stack. `scater` for QC and visualisation; `scran` for normalisation, modelling, and marker detection. Pairs naturally with the [OSCA online book](https://bioconductor.org/books/OSCA/).
+:::
+
+## Bulk RNA-seq
+
+::: {.resource-entry}
+### [DESeq2](https://bioconductor.org/packages/DESeq2/) · [edgeR](https://bioconductor.org/packages/edgeR/) · [limma](https://bioconductor.org/packages/limma/)
+License: OSS · LGPL-3.0 / GPL-2.0  ·  Maintainer: Love / WEHI Bioinformatics
+
+The differential-expression triumvirate. See the [R ecosystem](r-ecosystem.qmd) page for context. CTIR's [`bambamR`](https://github.com/CTTIR/bambamR) wraps this stack into a streamlined pipeline.
+:::
+
+::: {.resource-entry}
+### [tximport](https://bioconductor.org/packages/tximport/) · [tximeta](https://bioconductor.org/packages/tximeta/)
+License: OSS · GPL-2.0  ·  Maintainer: Mike Love et al.
+
+Transcript-to-gene-level summarisation from `salmon` / `kallisto` / `RSEM` output. `tximeta` adds automatic transcriptome-version metadata propagation.
+:::
+
+## Proteomics
+
+::: {.resource-entry}
+### [MSstats](https://msstats.org/)
+License: OSS · Artistic-2.0  ·  Maintainer: MSstats developers
+
+Statistical inference for label-free and labelled mass-spectrometry proteomics. Standard linear-mixed-model framework with explicit handling of technical replicates and batches.
+:::
+
+::: {.resource-entry}
+### [limma for proteomics](https://bioconductor.org/packages/limma/)
+License: OSS · GPL-2.0  ·  Maintainer: WEHI Bioinformatics
+
+`limma`'s linear-model machinery generalises cleanly to log-transformed protein-intensity matrices. Often the first tool to reach for on a proteomics dataset.
+:::
+
+## Metabolomics
+
+::: {.resource-entry}
+### [xcms](https://bioconductor.org/packages/xcms/)
+License: OSS · GPL-2.0  ·  Maintainer: Bioconductor metabolomics team
+
+Peak detection, alignment, and grouping for LC/GC-MS metabolomics data. The reference R implementation.
+:::
+
+::: {.resource-entry}
+### [MetaboAnalystR](https://github.com/xia-lab/MetaboAnalystR)
+License: OSS · GPL-2.0  ·  Maintainer: Xia Lab
+
+R interface to the MetaboAnalyst pipeline. Useful for end-to-end statistical analysis when `xcms` output is the starting point.
+:::
+
+## Genomics infrastructure
+
+::: {.resource-entry}
+### [GenomicRanges](https://bioconductor.org/packages/GenomicRanges/) · [Biostrings](https://bioconductor.org/packages/Biostrings/) · [GenomicFeatures](https://bioconductor.org/packages/GenomicFeatures/)
+License: OSS · Artistic-2.0  ·  Maintainer: Bioconductor Core Team
+
+The infrastructure layer underneath most Bioconductor pipelines: interval arithmetic, sequence containers, and annotation resources. Worth learning once; pays back across every project.
+:::
+
+::: {.resource-entry}
+### [VariantAnnotation](https://bioconductor.org/packages/VariantAnnotation/)
+License: OSS · Artistic-2.0  ·  Maintainer: Bioconductor Core Team
+
+Read, write, and annotate VCF files. Used by CTIR's [`molpathR`](https://github.com/CTTIR/molpathR) for variant ingestion.
+:::

@@ -1,0 +1,40 @@
+---
+title: "#ressources"
+subtitle: "A curated hub for computational biomedical research"
+toc: false
+page-layout: full
+---
+
+This site is a hand-picked, editorially reviewed collection of tools, packages, datasets, and reading material relevant to **CTIR — Computational Trauma and Tissue Injury Research**. It is not an aggregator and not auto-generated. Every entry was selected because it earned its place.
+
+The focus is on open, reproducible, peer-reviewed work in R packaging, multi-omics, statistical modelling, and the broader ecosystem that supports trauma and tissue-injury research.
+
+## Sections
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+### [About](about.qmd)
+What this hub is, what it excludes, and the editorial principles behind every entry.
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### [Ressources](ressources/index.qmd)
+Curated lists of CTIR packages, the surrounding R ecosystem, reproducibility tooling, statistical methods, omics infrastructure, writing tools, and public data sources.
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### [References](references/index.qmd)
+A topical bibliography underpinning the methods used across CTIR packages and the wider trauma / tissue-injury literature.
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### [Acknowledgements](acknowledgements.qmd)
+Credits to the maintainers, communities, funders, and collaborators that make this work possible.
+:::
+
+:::
+
+---
+
+Code on this site is released under the [MIT licence](LICENSE). Editorial content is released under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
