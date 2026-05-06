@@ -34,6 +34,20 @@ jobs:
             any::knitr
             any::rmarkdown
 
+      - name: Ensure gh-pages branch exists
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          if ! git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
+            echo "gh-pages missing — bootstrapping empty branch."
+            EMPTY_TREE=$(git mktree </dev/null)
+            COMMIT=$(git commit-tree "$EMPTY_TREE" -m "init gh-pages")
+            git push origin "$COMMIT:refs/heads/gh-pages"
+          else
+            echo "gh-pages exists — nothing to bootstrap."
+          fi
+
       - name: Render
         run: quarto render
 
