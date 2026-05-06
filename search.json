@@ -1,0 +1,674 @@
+[
+  {
+    "objectID": "privacy.html",
+    "href": "privacy.html",
+    "title": "Privacy",
+    "section": "",
+    "text": "This site is a static website hosted on GitHub Pages. It is intentionally minimal in its data handling."
+  },
+  {
+    "objectID": "privacy.html#what-this-site-does-not-do",
+    "href": "privacy.html#what-this-site-does-not-do",
+    "title": "Privacy",
+    "section": "What this site does not do",
+    "text": "What this site does not do\n\nNo cookies are set by this site.\nNo analytics services are loaded (no Google Analytics, Plausible, Matomo, or similar).\nNo tracking pixels, fingerprinting, or third-party scripts beyond the static assets needed to render the page.\nNo newsletter, no contact form, no account system. There is nothing to opt into."
+  },
+  {
+    "objectID": "privacy.html#what-github-pages-does",
+    "href": "privacy.html#what-github-pages-does",
+    "title": "Privacy",
+    "section": "What GitHub Pages does",
+    "text": "What GitHub Pages does\nThe site is served by GitHub Pages. GitHub may log IP addresses and other request metadata server-side as part of normal web-server operation, outside the control of this site’s editor. See GitHub’s privacy statement for details."
+  },
+  {
+    "objectID": "privacy.html#external-links",
+    "href": "privacy.html#external-links",
+    "title": "Privacy",
+    "section": "External links",
+    "text": "External links\nExternal links open in the user’s browser and are subject to the privacy policy of the target site. The editor of this hub has no control over what those sites do."
+  },
+  {
+    "objectID": "privacy.html#data-subject-requests",
+    "href": "privacy.html#data-subject-requests",
+    "title": "Privacy",
+    "section": "Data subject requests",
+    "text": "Data subject requests\nFor requests under GDPR (right to access, rectification, erasure, etc.) regarding the very limited data this site itself processes (effectively none, beyond the GitHub-Pages server logs):\nContact: 58561665+r-heller@users.noreply.github.com"
+  },
+  {
+    "objectID": "references/molecular-pathology.html",
+    "href": "references/molecular-pathology.html",
+    "title": "References — Molecular pathology",
+    "section": "",
+    "text": "Literature underpinning CTIR’s molpathR: variant analysis, NGS file-format specifications, and clinical-genomics knowledge bases."
+  },
+  {
+    "objectID": "references/molecular-pathology.html#suggested-reading",
+    "href": "references/molecular-pathology.html#suggested-reading",
+    "title": "References — Molecular pathology",
+    "section": "Suggested reading",
+    "text": "Suggested reading\n\nVCF format specification — Danecek et al., 2011.\nBAM / SAMtools — Li et al., 2009.\nGATK Best Practices — Van der Auwera et al., 2013, plus current-version updates.\nClinVar — Landrum et al., current edition.\nOncoKB — Chakravarty et al., 2017.\nAMP/ASCO/CAP variant-interpretation guidelines — Li et al., 2017.\n\nSee the disclaimer — this is a starting list, not a curated bibliography."
+  },
+  {
+    "objectID": "references/index.html",
+    "href": "references/index.html",
+    "title": "References",
+    "section": "",
+    "text": "A topical reading list of works underpinning the methods used across CTIR packages and the wider trauma / tissue-injury literature."
+  },
+  {
+    "objectID": "references/index.html#disclaimer",
+    "href": "references/index.html#disclaimer",
+    "title": "References",
+    "section": "Disclaimer",
+    "text": "Disclaimer\nThe lists on these pages are not an exhaustive or systematically curated bibliography. They do not necessarily reflect the full breadth of any field, and individual entries have not all been read in full or independently verified by the editor. Treat them as starting points and inspiration — pointers to further reading rather than authoritative recommendations.\nFor canonical references underpinning a specific CTIR package, consult that package’s inst/CITATION file or its documentation directly.\nWhen DOI-verified citations are added to the project’s references.bib, the CI pipeline runs scripts/verify-dois.R on every push to confirm each DOI resolves."
+  },
+  {
+    "objectID": "references/index.html#sections",
+    "href": "references/index.html#sections",
+    "title": "References",
+    "section": "Sections",
+    "text": "Sections\n\nDimensionality reduction\nRNA-seq & bulk omics\nSingle cell & cell reports\nMolecular pathology\nR package development\nTidyverse\nReproducible research\nTrauma biomarkers\nTissue injury"
+  },
+  {
+    "objectID": "references/trauma-biomarkers.html",
+    "href": "references/trauma-biomarkers.html",
+    "title": "References — Trauma biomarkers",
+    "section": "",
+    "text": "Domain-specific reading list on trauma biomarkers: discovery, validation, clinical utility."
+  },
+  {
+    "objectID": "references/trauma-biomarkers.html#suggested-topics",
+    "href": "references/trauma-biomarkers.html#suggested-topics",
+    "title": "References — Trauma biomarkers",
+    "section": "Suggested topics",
+    "text": "Suggested topics\nA starting list of reading areas. Specific citations to be added over time.\n\nAcute-phase proteins and trauma severity.\nCytokine signatures and trauma-induced coagulopathy.\nEndotheliopathy of trauma — syndecan-1, thrombomodulin, and related markers.\nMulti-omics biomarker discovery in polytrauma.\nReporting standards for biomarker studies — REMARK, STARD.\n\nSee the disclaimer — this is a starting list, not a curated bibliography."
+  },
+  {
+    "objectID": "references/rna-seq-and-bulk-omics.html",
+    "href": "references/rna-seq-and-bulk-omics.html",
+    "title": "References — RNA-seq & bulk omics",
+    "section": "",
+    "text": "Foundational literature underpinning CTIR’s bambamR and adjacent bulk-omics work."
+  },
+  {
+    "objectID": "references/rna-seq-and-bulk-omics.html#suggested-reading",
+    "href": "references/rna-seq-and-bulk-omics.html#suggested-reading",
+    "title": "References — RNA-seq & bulk omics",
+    "section": "Suggested reading",
+    "text": "Suggested reading\n\nDESeq2 — Love, Huber, Anders, 2014.\nedgeR — Robinson, McCarthy, Smyth, 2010.\nlimma-voom — Law, Chen, Shi, Smyth, 2014.\nSTAR aligner — Dobin et al., 2013.\nsalmon — Patro et al., 2017.\ntximport — Soneson, Love, Robinson, 2015.\n\nSee the disclaimer — this is a starting list, not a curated bibliography."
+  },
+  {
+    "objectID": "references/r-package-development.html",
+    "href": "references/r-package-development.html",
+    "title": "References — R package development",
+    "section": "",
+    "text": "Reference works underpinning CTIR’s package-development tooling: hexmakR, reflowR, pressR, and the CTIR package style more generally."
+  },
+  {
+    "objectID": "references/r-package-development.html#reference-works",
+    "href": "references/r-package-development.html#reference-works",
+    "title": "References — R package development",
+    "section": "Reference works",
+    "text": "Reference works\n\nWickham, H. & Bryan, J. R Packages: Organize, Test, Document, and Share Your Code (2nd ed.). O’Reilly, 2023. https://r-pkgs.org/ (Wickham & Bryan, 2023)\nR Core Team. Writing R Extensions. R Foundation for Statistical Computing. https://cran.r-project.org/doc/manuals/r-release/R-exts.html (R Core Team, n.d.)"
+  },
+  {
+    "objectID": "references/r-package-development.html#further-reading",
+    "href": "references/r-package-development.html#further-reading",
+    "title": "References — R package development",
+    "section": "Further reading",
+    "text": "Further reading\n\npkgdown — JOSS / project documentation.\nroxygen2 — project documentation and design notes.\ntestthat — Wickham, R Journal.\nMarwick et al. on research compendia (also listed under reproducible research).\n\nSee the disclaimer — this is a starting list, not a curated bibliography."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "A curated, hand-picked hub of computational tooling and reading material for biomedical research — focused on R packaging, multi-omics analysis, reproducible workflows, and the methods underpinning trauma and tissue-injury science. Every entry has been editorially selected. Nothing on this site is auto-generated or pulled from a feed.\nThe hub exists to save researchers the discovery cost: instead of trawling a hundred package indexes and journal listings, you get a short, opinionated shortlist with one paragraph of context per item."
+  },
+  {
+    "objectID": "about.html#what-youll-find-here",
+    "href": "about.html#what-youll-find-here",
+    "title": "About",
+    "section": "",
+    "text": "A curated, hand-picked hub of computational tooling and reading material for biomedical research — focused on R packaging, multi-omics analysis, reproducible workflows, and the methods underpinning trauma and tissue-injury science. Every entry has been editorially selected. Nothing on this site is auto-generated or pulled from a feed.\nThe hub exists to save researchers the discovery cost: instead of trawling a hundred package indexes and journal listings, you get a short, opinionated shortlist with one paragraph of context per item."
+  },
+  {
+    "objectID": "about.html#whats-excluded",
+    "href": "about.html#whats-excluded",
+    "title": "About",
+    "section": "What’s excluded",
+    "text": "What’s excluded\n\nCommercial vendors and paywalled tools. If the resource requires a licence to use the linked-to material, it doesn’t appear here.\nClosed-source software without a credible open alternative path.\nInactive or abandoned projects — the rough cutoff is no commits or releases in the last 24 months, unless the package is feature-complete and demonstrably stable.\nMarketing pages, vendor whitepapers, and aggregator blogs."
+  },
+  {
+    "objectID": "about.html#curation-principles",
+    "href": "about.html#curation-principles",
+    "title": "About",
+    "section": "Curation principles",
+    "text": "Curation principles\n\nOpen source preferred. Code under an OSI-approved licence (MIT, Apache 2.0, GPL, BSD) takes precedence over closed alternatives.\nReproducible by design. Tools that make the analysis trail auditable — targets, renv, Quarto, container-based pipelines — are over-represented here on purpose.\nPeer reviewed where applicable. For methods packages, a published reference is expected.\nActively maintained. Recent commits or releases, responsive issue tracker.\nVerifiable provenance. Every link has been resolved at build time; every citation has been DOI-checked. Items that fail verification do not appear on the rendered site."
+  },
+  {
+    "objectID": "about.html#licence-taxonomy-for-listed-resources",
+    "href": "about.html#licence-taxonomy-for-listed-resources",
+    "title": "About",
+    "section": "Licence taxonomy for listed resources",
+    "text": "Licence taxonomy for listed resources\nEach external entry carries one of:\n\nOSS — open-source software. The specific licence (MIT, Apache 2.0, GPL-3.0, BSD-2-Clause, etc.) is named per entry.\nCC — Creative Commons content (datasets, documentation, figures). The specific variant (CC BY 4.0, CC BY-SA 4.0, CC0) is named.\nPD — public domain works, including most US-government-released datasets.\nOA — gold open-access publications with an explicit reuse licence.\n\nIf a resource doesn’t fit cleanly, the entry says so."
+  },
+  {
+    "objectID": "about.html#editor",
+    "href": "about.html#editor",
+    "title": "About",
+    "section": "Editor",
+    "text": "Editor\nMaintained by: R. Heller"
+  },
+  {
+    "objectID": "about.html#inspiration",
+    "href": "about.html#inspiration",
+    "title": "About",
+    "section": "Inspiration",
+    "text": "Inspiration\nThe visual language and architecture of this site are adapted from boulingua/ressources — a curated language-learning hub that solved the same editorial problem for a different domain. CTIR’s hub is monolingual (English) where boulingua is tri-lingual; the audience here is the international scientific community."
+  },
+  {
+    "objectID": "acknowledgements.html",
+    "href": "acknowledgements.html",
+    "title": "Acknowledgements",
+    "section": "",
+    "text": "This hub stands on the work of communities that build, maintain, and document the open scientific computing stack. With sincere thanks to:\n\nThe R Core Team and R Foundation, for sustaining the R language.\nThe Bioconductor project and its contributors, for the world’s most coherent biomedical analysis ecosystem.\nPosit (formerly RStudio), for the IDE, the tidyverse, and Quarto.\nThe Quarto team, for a publishing system that takes reproducibility seriously.\nThe maintainers of every package referenced on this site — the work shown here is their work, surfaced and contextualised."
+  },
+  {
+    "objectID": "acknowledgements.html#communities-and-maintainers",
+    "href": "acknowledgements.html#communities-and-maintainers",
+    "title": "Acknowledgements",
+    "section": "",
+    "text": "This hub stands on the work of communities that build, maintain, and document the open scientific computing stack. With sincere thanks to:\n\nThe R Core Team and R Foundation, for sustaining the R language.\nThe Bioconductor project and its contributors, for the world’s most coherent biomedical analysis ecosystem.\nPosit (formerly RStudio), for the IDE, the tidyverse, and Quarto.\nThe Quarto team, for a publishing system that takes reproducibility seriously.\nThe maintainers of every package referenced on this site — the work shown here is their work, surfaced and contextualised."
+  },
+  {
+    "objectID": "acknowledgements.html#contributors-and-supporters",
+    "href": "acknowledgements.html#contributors-and-supporters",
+    "title": "Acknowledgements",
+    "section": "Contributors and supporters",
+    "text": "Contributors and supporters\nWith sincere thanks to everyone who has contributed to, supported, or made possible the work assembled here — collaborators, students, colleagues, funders, and the open communities whose tools we depend on. The breadth of this hub is only possible because of theirs."
+  },
+  {
+    "objectID": "acknowledgements.html#visual-and-architectural-inspiration",
+    "href": "acknowledgements.html#visual-and-architectural-inspiration",
+    "title": "Acknowledgements",
+    "section": "Visual and architectural inspiration",
+    "text": "Visual and architectural inspiration\nThe structure, navbar pattern, footer, and curated-list approach of this site are adapted from boulingua/ressources. Credit to its editor for the design language. CTIR’s hub diverges in being monolingual and in adding research-specific sections (CTIR packages, References)."
+  },
+  {
+    "objectID": "PLAN.html",
+    "href": "PLAN.html",
+    "title": "PLAN — CTTIR/ressources",
+    "section": "",
+    "text": "Accent color: #2a6f8a (teal-blue). Distinct from boulingua’s accent; reads in light + dark.\nLanguage: English only. Documented divergence from boulingua (which is tri-lingual because it teaches three languages; CTIR’s audience is the international scientific community).\nLicense model: code MIT; content CC BY-SA 4.0 (mirrors boulingua).\nCitation style: APA (CSL fetched at first build / committed manually).\nQuarto pinned: 1.5.57 in .quarto-version.\nDeploy: GitHub Pages from gh-pages branch via quarto-actions/publish@v2. Not enabled until first PR review.\nEngine: freeze: true; cttir-packages.qmd uses an R chunk that reads _data/cttir-repos.json — no API calls at render time.\n\n\n\n\n19 repos pulled from gh api /orgs/CTTIR/repos. Of those:\n\n14 R packages: songR, bambamR, hexmakR, reflowR, molpathR, scimagR, segmantR, hyperspectR, cellreportR, libscanR, pressR, dynasimR, qviewparsR, plus courses and tutorials (R-flavored content repos).\n5 non-package repos excluded from cttir-packages.qmd: pwa-quest, ressources (this repo), website, .github. courses and tutorials are surfaced separately in the Ressources index.\nLicense field is NOASSERTION for most R packages — likely missing SPDX-detected LICENSE files or non-standard layout. Flagged for Raban: decide on a single license per package and ensure GitHub auto-detects it (add License: field in DESCRIPTION plus a top-level LICENSE file with the standard SPDX text).\nEight R packages have no description field on GitHub (scimagR, segmantR, hyperspectR, cellreportR, libscanR, pressR, dynasimR). The cttir-packages.qmd table renders these with a — and tags them with a build-time warning. Flagged: add GitHub repo descriptions.\n\n\n\n\n\n\nThese are marked TODO_IMPRESSUM or TODO_FILL_BEFORE_DEPLOY and the CI gate fails until filled:\n\nimpressum.qmd — name, postal address, email, ORCID, affiliation\nprivacy.qmd — contact email for data requests\nabout.qmd — editor name + ORCID\nacknowledgements.qmd — funders, collaborators\n\n\n\n\nThe brief mandates DOI verification before commit. I have not populated references.bib beyond a small skeleton of book references that don’t need DOI verification (Wickham R Packages 2nd ed., R Core Team manual). All other references are deferred and the topic pages carry TODO_FILL_BEFORE_DEPLOY markers:\n\nreferences/dimensionality-reduction.qmd — needs SONG paper, UMAP (McInnes 2018), t-SNE (van der Maaten 2008), PHATE (Moon 2019), PCA classics\nreferences/rna-seq-and-bulk-omics.qmd — STAR, salmon, DESeq2 (Love 2014), edgeR (Robinson 2010), limma-voom (Law 2014)\nreferences/single-cell-and-cell-reports.qmd — Seurat, scran, scater, SingleCellExperiment\nreferences/molecular-pathology.qmd — VCF spec, GATK best practices, ClinVar, OncoKB\nreferences/r-package-development.qmd — Wickham R Packages, pkgdown, roxygen2, testthat\nreferences/reproducible-research.qmd — Marwick et al. on research compendia, targets paper, Quarto\nreferences/trauma-biomarkers.qmd — domain-specific reading list (PubMed search needed)\nreferences/tissue-injury.qmd — domain-specific reading list\n\nProcess for filling: for each entry, resolve DOI via https://doi.org/&lt;doi&gt;, confirm authors/year, add to references.bib, drop the TODO_FILL_BEFORE_DEPLOY marker on the page. The CI verify-dois job re-runs on every push and will catch any unresolvable DOI.\n\n\n\nI did not clone each package and mine inst/CITATION / DESCRIPTION references — that requires per-repo cloning and would 10× the scope. Deferred to a follow-up pass. Recommended approach when Raban is ready:\n# scripts/mine-package-citations.R\nfor (repo in repos) {\n  gh::gh(\"/repos/CTTIR/{repo}/contents/inst/CITATION\", repo = repo) |&gt;\n    parse_citation() |&gt; append_to_bib()\n}\n\n\n\nEvery entry in the ressources/*.qmd pages points to a canonical project URL (e.g. https://bioconductor.org, https://www.tidyverse.org). These are stable and well-known. The CI link checker will flag anything broken on first run. No [unverified] markers were needed.\n\n\n\n\n\nMonolingual (English) — see top of file.\nAccent color — #2a6f8a instead of boulingua’s accent.\nSection: cttir-packages — boulingua has no analogue; this is a CTIR-specific page generated from the repo inventory.\nReferences section — boulingua has none; CTIR’s research-hub identity makes a curated bibliography load-bearing.\n\n\n\n\nLocally quarto render should succeed. CI will fail intentionally on:\n\nTODO-marker check (Impressum / Privacy / About / Acknowledgements / References)\nPossibly DOI check if any DOIs are added before verification — currently bib is minimal\n\nThis is the documented expected state until Raban fills placeholders."
+  },
+  {
+    "objectID": "PLAN.html#decisions-taken",
+    "href": "PLAN.html#decisions-taken",
+    "title": "PLAN — CTTIR/ressources",
+    "section": "",
+    "text": "Accent color: #2a6f8a (teal-blue). Distinct from boulingua’s accent; reads in light + dark.\nLanguage: English only. Documented divergence from boulingua (which is tri-lingual because it teaches three languages; CTIR’s audience is the international scientific community).\nLicense model: code MIT; content CC BY-SA 4.0 (mirrors boulingua).\nCitation style: APA (CSL fetched at first build / committed manually).\nQuarto pinned: 1.5.57 in .quarto-version.\nDeploy: GitHub Pages from gh-pages branch via quarto-actions/publish@v2. Not enabled until first PR review.\nEngine: freeze: true; cttir-packages.qmd uses an R chunk that reads _data/cttir-repos.json — no API calls at render time."
+  },
+  {
+    "objectID": "PLAN.html#inventory-snapshot",
+    "href": "PLAN.html#inventory-snapshot",
+    "title": "PLAN — CTTIR/ressources",
+    "section": "",
+    "text": "19 repos pulled from gh api /orgs/CTTIR/repos. Of those:\n\n14 R packages: songR, bambamR, hexmakR, reflowR, molpathR, scimagR, segmantR, hyperspectR, cellreportR, libscanR, pressR, dynasimR, qviewparsR, plus courses and tutorials (R-flavored content repos).\n5 non-package repos excluded from cttir-packages.qmd: pwa-quest, ressources (this repo), website, .github. courses and tutorials are surfaced separately in the Ressources index.\nLicense field is NOASSERTION for most R packages — likely missing SPDX-detected LICENSE files or non-standard layout. Flagged for Raban: decide on a single license per package and ensure GitHub auto-detects it (add License: field in DESCRIPTION plus a top-level LICENSE file with the standard SPDX text).\nEight R packages have no description field on GitHub (scimagR, segmantR, hyperspectR, cellreportR, libscanR, pressR, dynasimR). The cttir-packages.qmd table renders these with a — and tags them with a build-time warning. Flagged: add GitHub repo descriptions."
+  },
+  {
+    "objectID": "PLAN.html#deferred-items-requiring-rabans-review",
+    "href": "PLAN.html#deferred-items-requiring-rabans-review",
+    "title": "PLAN — CTTIR/ressources",
+    "section": "",
+    "text": "These are marked TODO_IMPRESSUM or TODO_FILL_BEFORE_DEPLOY and the CI gate fails until filled:\n\nimpressum.qmd — name, postal address, email, ORCID, affiliation\nprivacy.qmd — contact email for data requests\nabout.qmd — editor name + ORCID\nacknowledgements.qmd — funders, collaborators\n\n\n\n\nThe brief mandates DOI verification before commit. I have not populated references.bib beyond a small skeleton of book references that don’t need DOI verification (Wickham R Packages 2nd ed., R Core Team manual). All other references are deferred and the topic pages carry TODO_FILL_BEFORE_DEPLOY markers:\n\nreferences/dimensionality-reduction.qmd — needs SONG paper, UMAP (McInnes 2018), t-SNE (van der Maaten 2008), PHATE (Moon 2019), PCA classics\nreferences/rna-seq-and-bulk-omics.qmd — STAR, salmon, DESeq2 (Love 2014), edgeR (Robinson 2010), limma-voom (Law 2014)\nreferences/single-cell-and-cell-reports.qmd — Seurat, scran, scater, SingleCellExperiment\nreferences/molecular-pathology.qmd — VCF spec, GATK best practices, ClinVar, OncoKB\nreferences/r-package-development.qmd — Wickham R Packages, pkgdown, roxygen2, testthat\nreferences/reproducible-research.qmd — Marwick et al. on research compendia, targets paper, Quarto\nreferences/trauma-biomarkers.qmd — domain-specific reading list (PubMed search needed)\nreferences/tissue-injury.qmd — domain-specific reading list\n\nProcess for filling: for each entry, resolve DOI via https://doi.org/&lt;doi&gt;, confirm authors/year, add to references.bib, drop the TODO_FILL_BEFORE_DEPLOY marker on the page. The CI verify-dois job re-runs on every push and will catch any unresolvable DOI.\n\n\n\nI did not clone each package and mine inst/CITATION / DESCRIPTION references — that requires per-repo cloning and would 10× the scope. Deferred to a follow-up pass. Recommended approach when Raban is ready:\n# scripts/mine-package-citations.R\nfor (repo in repos) {\n  gh::gh(\"/repos/CTTIR/{repo}/contents/inst/CITATION\", repo = repo) |&gt;\n    parse_citation() |&gt; append_to_bib()\n}\n\n\n\nEvery entry in the ressources/*.qmd pages points to a canonical project URL (e.g. https://bioconductor.org, https://www.tidyverse.org). These are stable and well-known. The CI link checker will flag anything broken on first run. No [unverified] markers were needed."
+  },
+  {
+    "objectID": "PLAN.html#divergences-from-boulingua",
+    "href": "PLAN.html#divergences-from-boulingua",
+    "title": "PLAN — CTTIR/ressources",
+    "section": "",
+    "text": "Monolingual (English) — see top of file.\nAccent color — #2a6f8a instead of boulingua’s accent.\nSection: cttir-packages — boulingua has no analogue; this is a CTIR-specific page generated from the repo inventory.\nReferences section — boulingua has none; CTIR’s research-hub identity makes a curated bibliography load-bearing."
+  },
+  {
+    "objectID": "PLAN.html#expected-first-build-state",
+    "href": "PLAN.html#expected-first-build-state",
+    "title": "PLAN — CTTIR/ressources",
+    "section": "",
+    "text": "Locally quarto render should succeed. CI will fail intentionally on:\n\nTODO-marker check (Impressum / Privacy / About / Acknowledgements / References)\nPossibly DOI check if any DOIs are added before verification — currently bib is minimal\n\nThis is the documented expected state until Raban fills placeholders."
+  },
+  {
+    "objectID": "ressources/writing-and-publishing.html",
+    "href": "ressources/writing-and-publishing.html",
+    "title": "Writing & publishing",
+    "section": "",
+    "text": "Tooling for academic writing and the surrounding citation / identifier infrastructure."
+  },
+  {
+    "objectID": "ressources/writing-and-publishing.html#authoring",
+    "href": "ressources/writing-and-publishing.html#authoring",
+    "title": "Writing & publishing",
+    "section": "Authoring",
+    "text": "Authoring\n\nQuarto\nLicense: OSS · MIT · Maintainer: Posit\nManuscripts, theses, and books from the same source as your analyses. Native cross-references, citations, and footnotes. Reach for the manuscript project type when targeting a journal.\n\n\nLaTeX (TeX Live)\nLicense: OSS · LPPL · Maintainer: TeX Users Group\nThe substrate for any non-trivial PDF rendering. Quarto delegates to it for PDF output; useful to know directly when the journal template diverges from defaults.\n\n\nOverleaf\nLicense: source OSS · AGPL-3.0 (community edition); hosted service is freemium · Maintainer: Overleaf / Digital Science\nCollaborative LaTeX editing in the browser. The community edition is genuinely open source — listed on those grounds.\n\n\nrticles\nLicense: OSS · GPL-3.0 · Maintainer: Posit\nR Markdown templates for journal articles. Quarto journal templates exist separately and overlap heavily; rticles remains useful for journals that have not migrated.\n\n\nbookdown · Quarto Books\nLicense: OSS · GPL-3.0 / MIT · Maintainer: Posit\nLong-form publishing. New projects should default to Quarto Books; bookdown remains for legacy works."
+  },
+  {
+    "objectID": "ressources/writing-and-publishing.html#references-and-citations",
+    "href": "ressources/writing-and-publishing.html#references-and-citations",
+    "title": "Writing & publishing",
+    "section": "References and citations",
+    "text": "References and citations\n\nZotero\nLicense: OSS · AGPL-3.0 · Maintainer: Roy Rosenzweig Center / community\nThe reference manager. Browser-connector capture, group libraries, and a healthy plugin ecosystem.\n\n\nBetter BibTeX for Zotero\nLicense: OSS · MIT · Maintainer: Emiliano Heyns\nAuto-generates stable citation keys, exports clean BibTeX/BibLaTeX, and supports auto-export to a watched .bib file. Effectively required for serious LaTeX/Quarto work with Zotero.\n\n\nCitation Style Language (CSL) · CSL repository\nLicense: CC · CC BY-SA 3.0 (styles) · Maintainer: CSL project\nThe XML-based citation-formatting language. The official style repository carries thousands of journal styles."
+  },
+  {
+    "objectID": "ressources/writing-and-publishing.html#identifiers",
+    "href": "ressources/writing-and-publishing.html#identifiers",
+    "title": "Writing & publishing",
+    "section": "Identifiers",
+    "text": "Identifiers\n\nORCID\nLicense: service · CC0 (public data) · Maintainer: ORCID, Inc.\nPersistent author identifier. Required by most journals and funders; cite yours on every artefact.\n\n\nROR — Research Organization Registry\nLicense: PD · CC0 · Maintainer: ROR community\nPersistent identifier for research institutions. Use it in affiliations and dataset metadata."
+  },
+  {
+    "objectID": "ressources/index.html",
+    "href": "ressources/index.html",
+    "title": "Ressources",
+    "section": "",
+    "text": "Curated lists, grouped by topic. Each entry carries a one- or two-sentence editorial note explaining why it is here."
+  },
+  {
+    "objectID": "ressources/index.html#sections",
+    "href": "ressources/index.html#sections",
+    "title": "Ressources",
+    "section": "Sections",
+    "text": "Sections\n\nCTIR packages — every public R package in the CTTIR organization, generated from the live repo inventory.\nR ecosystem — tidyverse, Bioconductor, package-development tooling, and the libraries that show up across most CTIR work.\nReproducibility — Quarto, targets, renv, container images, archival.\nStatistics & ML — modelling stacks for biomarkers, multi-omics, and survival analysis.\nOmics & bioinformatics — domain-specific Bioconductor stacks (single cell, proteomics, metabolomics, genomics).\nWriting & publishing — Quarto, LaTeX, Zotero, ORCID, ROR, journal templates.\nData sources — public datasets and APIs relevant to trauma / multi-omics work."
+  },
+  {
+    "objectID": "ressources/index.html#course-material-from-ctir",
+    "href": "ressources/index.html#course-material-from-ctir",
+    "title": "Ressources",
+    "section": "Course material from CTIR",
+    "text": "Course material from CTIR\nTwo CTIR repositories deliver teaching material rather than software packages and are hosted separately:\n\ncourses\nSite · License: OSS · MIT · Maintainer: CTTIR\nCourse material maintained by the CTIR group. Linked here so users land on it without searching the org by hand.\n\n\ntutorials\nSite · License: OSS · MIT · Maintainer: CTTIR\nStandalone tutorials covering practical workflows."
+  },
+  {
+    "objectID": "ressources/r-ecosystem.html",
+    "href": "ressources/r-ecosystem.html",
+    "title": "R ecosystem",
+    "section": "",
+    "text": "The R libraries and projects that show up across most CTIR work. All open source, all actively maintained at the time of writing."
+  },
+  {
+    "objectID": "ressources/r-ecosystem.html#core-language-and-project",
+    "href": "ressources/r-ecosystem.html#core-language-and-project",
+    "title": "R ecosystem",
+    "section": "Core language and project",
+    "text": "Core language and project\n\nR\nLicense: OSS · GPL-2.0 / GPL-3.0 · Maintainer: R Core Team\nThe language and its base distribution. Every CTIR package depends on it, directly or transitively.\n\n\nBioconductor\nLicense: varies (Artistic-2.0 default for member packages) · Maintainer: Bioconductor Core Team\nThe coherent biomedical-analysis ecosystem on top of R. Twice-yearly release cycle, shared classes (SummarizedExperiment, MultiAssayExperiment, SingleCellExperiment), and a peer-review process for new packages."
+  },
+  {
+    "objectID": "ressources/r-ecosystem.html#tidyverse-and-adjacent",
+    "href": "ressources/r-ecosystem.html#tidyverse-and-adjacent",
+    "title": "R ecosystem",
+    "section": "Tidyverse and adjacent",
+    "text": "Tidyverse and adjacent\n\ntidyverse\nLicense: OSS · MIT · Maintainer: Posit / community\nA meta-package that loads dplyr, tidyr, readr, purrr, tibble, stringr, forcats, and ggplot2. The de-facto data-manipulation idiom in modern R.\n\n\ndata.table\nLicense: OSS · MPL-2.0 · Maintainer: data.table contributors\nThe high-performance alternative to dplyr. Worth reaching for when working set sizes start to hurt."
+  },
+  {
+    "objectID": "ressources/r-ecosystem.html#package-development",
+    "href": "ressources/r-ecosystem.html#package-development",
+    "title": "R ecosystem",
+    "section": "Package development",
+    "text": "Package development\n\nusethis · devtools\nLicense: OSS · MIT · Maintainer: Posit\nThe package-author’s day-to-day toolkit: scaffolding, install/load workflows, release helpers.\n\n\nroxygen2\nLicense: OSS · MIT · Maintainer: Posit\nInline documentation generator. Function-level docstrings compile to man/*.Rd. Standard across modern R packages.\n\n\ntestthat\nLicense: OSS · MIT · Maintainer: Posit\nThe unit-testing framework. Edition 3 is the current default; expect snapshot tests and parallel execution.\n\n\npkgdown\nLicense: OSS · MIT · Maintainer: Posit\nGenerates documentation websites for R packages. Every CTIR package’s gh-pages site is built with it.\n\n\nlintr · styler\nLicense: OSS · MIT · Maintainer: lintr / styler authors\nLinting and code style enforcement. Pair them in pre-commit hooks."
+  },
+  {
+    "objectID": "ressources/r-ecosystem.html#pipelines-and-reproducibility",
+    "href": "ressources/r-ecosystem.html#pipelines-and-reproducibility",
+    "title": "R ecosystem",
+    "section": "Pipelines and reproducibility",
+    "text": "Pipelines and reproducibility\n\ntargets\nLicense: OSS · MIT · Maintainer: Will Landau / rOpenSci\nMake-style pipeline framework for R. Tracks dependencies, skips unchanged steps, and parallelises across local and HPC backends. Treat it as the default for any analysis with more than ~five non-trivial stages.\n\n\nrenv\nLicense: OSS · MIT · Maintainer: Posit\nProject-local package libraries with a lockfile. The minimal viable reproducibility layer for an R project."
+  },
+  {
+    "objectID": "ressources/r-ecosystem.html#bioconductor-flagships-relevant-to-multi-omics",
+    "href": "ressources/r-ecosystem.html#bioconductor-flagships-relevant-to-multi-omics",
+    "title": "R ecosystem",
+    "section": "Bioconductor flagships relevant to multi-omics",
+    "text": "Bioconductor flagships relevant to multi-omics\n\nDESeq2\nLicense: OSS · LGPL-3.0 · Maintainer: Michael Love et al.\nDifferential-expression analysis for RNA-seq counts using negative binomial generalised linear models with shrunken dispersion and effect size estimates.\n\n\nedgeR · limma\nLicense: OSS · GPL-2.0 · Maintainer: WEHI Bioinformatics\nThe other two members of the de-facto bulk-RNA-seq differential-expression triumvirate. limma-voom remains the standard linear-model route.\n\n\nSummarizedExperiment · MultiAssayExperiment\nLicense: OSS · Artistic-2.0 · Maintainer: Bioconductor Core Team\nThe shared S4 containers that hold matrix-shaped assays plus row/column metadata. Most Bioconductor pipelines speak this idiom."
+  },
+  {
+    "objectID": "ressources/omics-and-bioinformatics.html",
+    "href": "ressources/omics-and-bioinformatics.html",
+    "title": "Omics & bioinformatics",
+    "section": "",
+    "text": "Domain-specific tooling, primarily Bioconductor. Listed by data modality."
+  },
+  {
+    "objectID": "ressources/omics-and-bioinformatics.html#single-cell",
+    "href": "ressources/omics-and-bioinformatics.html#single-cell",
+    "title": "Omics & bioinformatics",
+    "section": "Single-cell",
+    "text": "Single-cell\n\nSeurat\nLicense: OSS · MIT · Maintainer: Satija lab\nThe dominant single-cell-RNA-seq toolkit in R. Quality control, normalisation, integration, dimensionality reduction, clustering, differential expression, and trajectory analysis in one object.\n\n\nSingleCellExperiment · scran · scater\nLicense: OSS · GPL-3.0 · Maintainer: Bioconductor\nThe Bioconductor single-cell stack. scater for QC and visualisation; scran for normalisation, modelling, and marker detection. Pairs naturally with the OSCA online book."
+  },
+  {
+    "objectID": "ressources/omics-and-bioinformatics.html#bulk-rna-seq",
+    "href": "ressources/omics-and-bioinformatics.html#bulk-rna-seq",
+    "title": "Omics & bioinformatics",
+    "section": "Bulk RNA-seq",
+    "text": "Bulk RNA-seq\n\nDESeq2 · edgeR · limma\nLicense: OSS · LGPL-3.0 / GPL-2.0 · Maintainer: Love / WEHI Bioinformatics\nThe differential-expression triumvirate. See the R ecosystem page for context. CTIR’s bambamR wraps this stack into a streamlined pipeline.\n\n\ntximport · tximeta\nLicense: OSS · GPL-2.0 · Maintainer: Mike Love et al.\nTranscript-to-gene-level summarisation from salmon / kallisto / RSEM output. tximeta adds automatic transcriptome-version metadata propagation."
+  },
+  {
+    "objectID": "ressources/omics-and-bioinformatics.html#proteomics",
+    "href": "ressources/omics-and-bioinformatics.html#proteomics",
+    "title": "Omics & bioinformatics",
+    "section": "Proteomics",
+    "text": "Proteomics\n\nMSstats\nLicense: OSS · Artistic-2.0 · Maintainer: MSstats developers\nStatistical inference for label-free and labelled mass-spectrometry proteomics. Standard linear-mixed-model framework with explicit handling of technical replicates and batches.\n\n\nlimma for proteomics\nLicense: OSS · GPL-2.0 · Maintainer: WEHI Bioinformatics\nlimma’s linear-model machinery generalises cleanly to log-transformed protein-intensity matrices. Often the first tool to reach for on a proteomics dataset."
+  },
+  {
+    "objectID": "ressources/omics-and-bioinformatics.html#metabolomics",
+    "href": "ressources/omics-and-bioinformatics.html#metabolomics",
+    "title": "Omics & bioinformatics",
+    "section": "Metabolomics",
+    "text": "Metabolomics\n\nxcms\nLicense: OSS · GPL-2.0 · Maintainer: Bioconductor metabolomics team\nPeak detection, alignment, and grouping for LC/GC-MS metabolomics data. The reference R implementation.\n\n\nMetaboAnalystR\nLicense: OSS · GPL-2.0 · Maintainer: Xia Lab\nR interface to the MetaboAnalyst pipeline. Useful for end-to-end statistical analysis when xcms output is the starting point."
+  },
+  {
+    "objectID": "ressources/omics-and-bioinformatics.html#genomics-infrastructure",
+    "href": "ressources/omics-and-bioinformatics.html#genomics-infrastructure",
+    "title": "Omics & bioinformatics",
+    "section": "Genomics infrastructure",
+    "text": "Genomics infrastructure\n\nGenomicRanges · Biostrings · GenomicFeatures\nLicense: OSS · Artistic-2.0 · Maintainer: Bioconductor Core Team\nThe infrastructure layer underneath most Bioconductor pipelines: interval arithmetic, sequence containers, and annotation resources. Worth learning once; pays back across every project.\n\n\nVariantAnnotation\nLicense: OSS · Artistic-2.0 · Maintainer: Bioconductor Core Team\nRead, write, and annotate VCF files. Used by CTIR’s molpathR for variant ingestion."
+  },
+  {
+    "objectID": "ressources/data-sources.html",
+    "href": "ressources/data-sources.html",
+    "title": "Data sources",
+    "section": "",
+    "text": "Public datasets and APIs relevant to multi-omics, biomarker, and trauma / tissue-injury research. Each entry notes the licence terms because they vary widely."
+  },
+  {
+    "objectID": "ressources/data-sources.html#literature-and-citation",
+    "href": "ressources/data-sources.html#literature-and-citation",
+    "title": "Data sources",
+    "section": "Literature and citation",
+    "text": "Literature and citation\n\nPubMed · E-utilities\nLicense: PD (most metadata, US-government work) · Maintainer: NCBI / NLM\nThe biomedical-literature index and its programmatic API. Metadata is free to redistribute; full-text articles follow each publisher’s licence.\n\n\nEurope PMC\nLicense: varies; metadata under CC0 / CC BY · Maintainer: EMBL-EBI\nMirror and extension of PubMed Central with broader open-access full-text coverage and a documented REST API."
+  },
+  {
+    "objectID": "ressources/data-sources.html#genomics-repositories",
+    "href": "ressources/data-sources.html#genomics-repositories",
+    "title": "Data sources",
+    "section": "Genomics repositories",
+    "text": "Genomics repositories\n\nNCBI GEO — Gene Expression Omnibus\nLicense: PD (US-government work) · Maintainer: NCBI\nThe largest functional-genomics archive: arrays, RNA-seq, ChIP-seq, ATAC-seq. Per-submission deposit terms govern reuse; most data are openly available.\n\n\nArrayExpress / BioStudies\nLicense: CC0 (most studies) · Maintainer: EMBL-EBI\nThe European functional-genomics archive, now part of BioStudies. Many studies are dual-deposited with GEO.\n\n\nEnsembl\nLicense: varies; most annotation under Apache-2.0 / CC0 · Maintainer: EMBL-EBI\nComprehensive genome annotations and a stable REST API. The reference for transcript-level annotation in many R/Bioconductor pipelines.\n\n\nUCSC Genome Browser\nLicense: varies; track licences declared per dataset · Maintainer: UCSC\nGenome visualisation and a large library of annotation tracks. The Table Browser exposes the underlying tables programmatically."
+  },
+  {
+    "objectID": "ressources/data-sources.html#proteins-and-pathways",
+    "href": "ressources/data-sources.html#proteins-and-pathways",
+    "title": "Data sources",
+    "section": "Proteins and pathways",
+    "text": "Proteins and pathways\n\nUniProt\nLicense: CC · CC BY 4.0 · Maintainer: UniProt Consortium (EBI / SIB / PIR)\nThe reference protein-sequence and functional-annotation database. Programmatic access via REST and SPARQL.\n\n\nReactome\nLicense: CC · CC BY 4.0 · Maintainer: Reactome Consortium\nCurated biological-pathway database with R access via ReactomePA."
+  },
+  {
+    "objectID": "ressources/data-sources.html#clinical",
+    "href": "ressources/data-sources.html#clinical",
+    "title": "Data sources",
+    "section": "Clinical",
+    "text": "Clinical\n\nClinicalTrials.gov\nLicense: PD (US-government work) · Maintainer: NIH / NLM\nRegistry of clinical trials worldwide. The API v2 is well documented and returns structured study, eligibility, intervention, and outcome data.\n\n\nOMIM — Online Mendelian Inheritance in Man\nLicense: registration required for API; site browsable openly; redistribution restricted · Maintainer: Johns Hopkins University\nCatalogue of human genes and genetic disorders. The redistribution restrictions are real — read the licence before mirroring data.\n\n\nClinVar\nLicense: PD (NCBI submissions) · Maintainer: NCBI\nAggregated reports of relationships between human variants and phenotypes. Used directly by CTIR’s molpathR variant-annotation flow."
+  },
+  {
+    "objectID": "ressources/reproducibility.html",
+    "href": "ressources/reproducibility.html",
+    "title": "Reproducibility",
+    "section": "",
+    "text": "Tools that make an analysis trail auditable from raw data to figure. The shortlist is intentionally narrow — the goal is to pick a stack and use it, not to compare twenty options."
+  },
+  {
+    "objectID": "ressources/reproducibility.html#authoring",
+    "href": "ressources/reproducibility.html#authoring",
+    "title": "Reproducibility",
+    "section": "Authoring",
+    "text": "Authoring\n\nQuarto\nLicense: OSS · MIT · Maintainer: Posit\nThe successor to R Markdown. Renders the same document to HTML, PDF, Word, slides, books, and websites. Native multi-language support (R, Python, Julia, Observable). This site is built with it.\n\n\nR Markdown\nLicense: OSS · GPL-3.0 · Maintainer: Posit\nStill actively maintained. New projects should default to Quarto; existing R Markdown projects do not need to migrate urgently.\n\n\nworkflowr\nLicense: OSS · MIT · Maintainer: John Blischak\nBuilds a reproducible-by-construction website from an R-Markdown analysis directory: every page records a git commit, RNG seed, and session info. CTIR’s reflowR provides custom themes for it."
+  },
+  {
+    "objectID": "ressources/reproducibility.html#pipelines",
+    "href": "ressources/reproducibility.html#pipelines",
+    "title": "Reproducibility",
+    "section": "Pipelines",
+    "text": "Pipelines\n\ntargets\nLicense: OSS · MIT · Maintainer: Will Landau / rOpenSci\nSee the R ecosystem page. Default choice for non-trivial R pipelines."
+  },
+  {
+    "objectID": "ressources/reproducibility.html#environment-and-dependencies",
+    "href": "ressources/reproducibility.html#environment-and-dependencies",
+    "title": "Reproducibility",
+    "section": "Environment and dependencies",
+    "text": "Environment and dependencies\n\nrenv\nLicense: OSS · MIT · Maintainer: Posit\nR project lockfile. Records exact package versions; restores them on another machine.\n\n\nRocker\nLicense: OSS · GPL-2.0 (images) / project content varies · Maintainer: Rocker Project\nCurated Docker images for R, including Bioconductor-flavoured images and tidyverse-preinstalled stacks. The path of least resistance to a reproducible container."
+  },
+  {
+    "objectID": "ressources/reproducibility.html#archival-and-sharing",
+    "href": "ressources/reproducibility.html#archival-and-sharing",
+    "title": "Reproducibility",
+    "section": "Archival and sharing",
+    "text": "Archival and sharing\n\nZenodo\nLicense: PD (service); content varies · Maintainer: CERN\nDOI minting for code, data, and supplementary material. Integrates directly with GitHub for one-click archival of releases.\n\n\nOSF — Open Science Framework\nLicense: OSS · Apache-2.0 (platform); content varies · Maintainer: Center for Open Science\nProject-centric hub for protocols, preregistration, code, and data. Useful for the ancillary materials that don’t fit on Zenodo.\n\n\nBinder\nLicense: OSS · BSD-3-Clause · Maintainer: Project Jupyter\nBuilds an executable container from a public repo and serves it as a notebook in the browser. Lowest-friction “click to run my analysis” link for reviewers."
+  },
+  {
+    "objectID": "ressources/stats-and-ml.html",
+    "href": "ressources/stats-and-ml.html",
+    "title": "Statistics & ML",
+    "section": "",
+    "text": "Modelling stacks relevant to biomarker discovery, multi-omics integration, and survival analysis. Curated for the trauma / tissue-injury context — heavy on regularised models, mixed effects, and Bayesian workflows."
+  },
+  {
+    "objectID": "ressources/stats-and-ml.html#multi-omics-integration",
+    "href": "ressources/stats-and-ml.html#multi-omics-integration",
+    "title": "Statistics & ML",
+    "section": "Multi-omics integration",
+    "text": "Multi-omics integration\n\nmixOmics\nLicense: OSS · GPL-3.0 · Maintainer: Kim-Anh Lê Cao et al.\nSparse multivariate methods for omics integration: PLS-DA, sPLS, DIABLO, MINT. The de-facto package when the question is “what jointly varies across two or more omics blocks?”"
+  },
+  {
+    "objectID": "ressources/stats-and-ml.html#modelling-frameworks",
+    "href": "ressources/stats-and-ml.html#modelling-frameworks",
+    "title": "Statistics & ML",
+    "section": "Modelling frameworks",
+    "text": "Modelling frameworks\n\ntidymodels\nLicense: OSS · MIT · Maintainer: Posit\nModern, opinionated modelling meta-package. Resampling, tuning, recipe-based preprocessing, and a unified parsnip interface across model engines.\n\n\nmlr3\nLicense: OSS · LGPL-3.0 · Maintainer: mlr-org\nObject-oriented machine-learning framework with strong support for nested resampling, pipelines, and benchmarking. The choice when method comparison or pipeline composition is the central concern.\n\n\ncaret\nLicense: OSS · GPL-2.0 / GPL-3.0 · Maintainer: Max Kuhn\nPredecessor to tidymodels. Still widely used in legacy code and books; new projects should default to tidymodels."
+  },
+  {
+    "objectID": "ressources/stats-and-ml.html#specific-model-families",
+    "href": "ressources/stats-and-ml.html#specific-model-families",
+    "title": "Statistics & ML",
+    "section": "Specific model families",
+    "text": "Specific model families\n\nglmnet\nLicense: OSS · GPL-2.0 · Maintainer: Trevor Hastie / Jerome Friedman et al.\nLasso, ridge, and elastic-net generalised linear models. The reference implementation; cited in essentially every regularised-regression methods paper.\n\n\nrandomForest · ranger\nLicense: OSS · GPL-2.0 / GPL-3.0 · Maintainer: Liaw / Wright\nranger is the fast, multithreaded reimplementation; reach for it when row counts get into six figures.\n\n\nxgboost\nLicense: OSS · Apache-2.0 · Maintainer: DMLC\nGradient-boosted trees. Native R interface; the workhorse for tabular prediction baselines."
+  },
+  {
+    "objectID": "ressources/stats-and-ml.html#survival-analysis",
+    "href": "ressources/stats-and-ml.html#survival-analysis",
+    "title": "Statistics & ML",
+    "section": "Survival analysis",
+    "text": "Survival analysis\n\nsurvival\nLicense: OSS · LGPL-2.0 · Maintainer: Terry Therneau\nThe reference R survival library. Cox regression, parametric survival, frailty models, multi-state models — the canonical implementation.\n\n\nsurvminer\nLicense: OSS · GPL-2.0 · Maintainer: Alboukadel Kassambara\nggplot2 Kaplan–Meier plots, forest plots, and diagnostic plots for survival and related models. Almost mandatory for publication-ready survival figures."
+  },
+  {
+    "objectID": "ressources/stats-and-ml.html#mixed-effects-and-bayesian",
+    "href": "ressources/stats-and-ml.html#mixed-effects-and-bayesian",
+    "title": "Statistics & ML",
+    "section": "Mixed-effects and Bayesian",
+    "text": "Mixed-effects and Bayesian\n\nlme4\nLicense: OSS · GPL-2.0 · Maintainer: Douglas Bates et al.\nLinear and generalised linear mixed-effects models. The default frequentist mixed-model engine in R.\n\n\nStan · brms · rstanarm\nLicense: OSS · BSD-3-Clause / GPL-2.0+ · Maintainer: Stan development team\nProbabilistic programming for full-Bayesian inference. brms provides a lme4-flavoured formula interface that compiles to Stan; rstanarm precompiles common GLM/GLMM templates."
+  },
+  {
+    "objectID": "ressources/cttir-packages.html",
+    "href": "ressources/cttir-packages.html",
+    "title": "CTIR packages",
+    "section": "",
+    "text": "Every public R package in the CTTIR GitHub organization. Rendered from _data/cttir-repos.json, which is refreshed by scripts/fetch-cttir-repos.R and validated in CI.\nPackage\nDescription\nLicense\nSite\n\n\n\n\nbambamR\nR package for streamlined RNA-seq analysis pipelines — from count matrices to publication-ready results\n—\nsite\n\n\ncellreportR\n—\n—\nsite\n\n\ndynasimR\n—\n—\nsite\n\n\nhexmakR\nR package for generating polished hex sticker logos for R packages using customizable templates\n—\nsite\n\n\nhyperspectR\n—\n—\nsite\n\n\nlibscanR\n—\n—\nsite\n\n\nmolpathR\nUnified R platform for molecular pathology data — parse NGS files (VCF, BAM, FASTQ), XML/PDF reports, and clinical data into a queryable database with an interactive Shiny app for clinical exploration and visualization.\n—\nsite\n\n\npressR\n—\n—\nsite\n\n\nqviewparsR\nPure-R parser for the binary .Q-View project file format used in chemiluminescent multiplex ELISA plate imaging and quantification.\n—\nsite\n\n\nreflowR\nCustom workflowr themes and templates for reproducible research websites in R\n—\nsite\n\n\nscimagR\n—\n—\nsite\n\n\nsegmantR\n—\n—\nsite\n\n\nsongR\nR package for SONG dimensionality reduction — structured, interpretable embeddings for high-dimensional biological data\n—\nsite"
+  },
+  {
+    "objectID": "ressources/cttir-packages.html#notes",
+    "href": "ressources/cttir-packages.html#notes",
+    "title": "CTIR packages",
+    "section": "Notes",
+    "text": "Notes\n\nLicense — means GitHub’s licence detector did not find an SPDX-identified LICENSE file in the repository’s expected location. This is editorial debt to resolve in each package.\nDescription — means the GitHub repository description field is blank.\nThe list is generated at build time. To refresh the underlying inventory, run Rscript scripts/fetch-cttir-repos.R and commit the updated _data/cttir-repos.json."
+  },
+  {
+    "objectID": "disclaimer.html",
+    "href": "disclaimer.html",
+    "title": "Disclaimer",
+    "section": "",
+    "text": "The content of this site has been compiled with care, but no guarantee is given as to its accuracy, completeness, or timeliness. Liability for content under §7 (1) TMG applies only to the editor’s own work. Under §§8–10 TMG, the editor is not obliged to monitor transmitted or stored third-party information, or to investigate circumstances that suggest unlawful activity. Obligations to remove or block the use of information under general law remain unaffected. Liability in this respect attaches only from the moment a concrete infringement becomes known. Any such content will be removed promptly."
+  },
+  {
+    "objectID": "disclaimer.html#editorial-content",
+    "href": "disclaimer.html#editorial-content",
+    "title": "Disclaimer",
+    "section": "",
+    "text": "The content of this site has been compiled with care, but no guarantee is given as to its accuracy, completeness, or timeliness. Liability for content under §7 (1) TMG applies only to the editor’s own work. Under §§8–10 TMG, the editor is not obliged to monitor transmitted or stored third-party information, or to investigate circumstances that suggest unlawful activity. Obligations to remove or block the use of information under general law remain unaffected. Liability in this respect attaches only from the moment a concrete infringement becomes known. Any such content will be removed promptly."
+  },
+  {
+    "objectID": "disclaimer.html#external-links",
+    "href": "disclaimer.html#external-links",
+    "title": "Disclaimer",
+    "section": "External links",
+    "text": "External links\nThis site contains links to external websites maintained by third parties. The editor has no influence over the content of those sites. At the time the links were added, the linked pages were checked for unlawful content and none was apparent. Permanent monitoring of the content of linked pages is not reasonable without concrete evidence of an infringement. If such an infringement becomes known, the link will be removed promptly."
+  },
+  {
+    "objectID": "disclaimer.html#citations-and-recommendations",
+    "href": "disclaimer.html#citations-and-recommendations",
+    "title": "Disclaimer",
+    "section": "Citations and recommendations",
+    "text": "Citations and recommendations\nCitations and recommendations on this site are editorial — they reflect the editor’s reading of the literature and ecosystem and do not constitute professional, clinical, or legal advice. Use of any tool, dataset, or method linked from this site is at the user’s own risk."
+  },
+  {
+    "objectID": "disclaimer.html#trademarks",
+    "href": "disclaimer.html#trademarks",
+    "title": "Disclaimer",
+    "section": "Trademarks",
+    "text": "Trademarks\nSoftware, package, and project names mentioned on this site are the property of their respective owners. Mention here does not imply endorsement."
+  },
+  {
+    "objectID": "impressum.html",
+    "href": "impressum.html",
+    "title": "Impressum",
+    "section": "",
+    "text": "Angaben gemäß § 5 TMG."
+  },
+  {
+    "objectID": "impressum.html#verantwortlich",
+    "href": "impressum.html#verantwortlich",
+    "title": "Impressum",
+    "section": "Verantwortlich",
+    "text": "Verantwortlich\nName: R. Heller\nAnschrift: Albert-Einstein-Straße 47\n02977 Hoyerswerda\nDeutschland\nKontakt — E-Mail: 58561665+r-heller@users.noreply.github.com"
+  },
+  {
+    "objectID": "impressum.html#editorial-responsibility",
+    "href": "impressum.html#editorial-responsibility",
+    "title": "Impressum",
+    "section": "Editorial responsibility",
+    "text": "Editorial responsibility\nVerantwortlich für den Inhalt nach § 18 Abs. 2 MStV: R. Heller, Anschrift wie oben."
+  },
+  {
+    "objectID": "impressum.html#jurisdiction",
+    "href": "impressum.html#jurisdiction",
+    "title": "Impressum",
+    "section": "Jurisdiction",
+    "text": "Jurisdiction\nDieses Angebot wird unter dem Recht der Bundesrepublik Deutschland betrieben. Streitigkeiten unterliegen der deutschen Gerichtsbarkeit."
+  },
+  {
+    "objectID": "impressum.html#eu-online-dispute-resolution",
+    "href": "impressum.html#eu-online-dispute-resolution",
+    "title": "Impressum",
+    "section": "EU online dispute resolution",
+    "text": "EU online dispute resolution\nDie Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit: https://ec.europa.eu/consumers/odr. Wir sind nicht verpflichtet und nicht bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "#ressources",
+    "section": "",
+    "text": "This site is a hand-picked, editorially reviewed collection of tools, packages, datasets, and reading material relevant to CTIR — Computational Trauma and Tissue Injury Research. It is not an aggregator and not auto-generated. Every entry was selected because it earned its place.\nThe focus is on open, reproducible, peer-reviewed work in R packaging, multi-omics, statistical modelling, and the broader ecosystem that supports trauma and tissue-injury research."
+  },
+  {
+    "objectID": "index.html#sections",
+    "href": "index.html#sections",
+    "title": "#ressources",
+    "section": "Sections",
+    "text": "Sections\n\n\nAbout\nWhat this hub is, what it excludes, and the editorial principles behind every entry.\n\n\nRessources\nCurated lists of CTIR packages, the surrounding R ecosystem, reproducibility tooling, statistical methods, omics infrastructure, writing tools, and public data sources.\n\n\nReferences\nA topical bibliography underpinning the methods used across CTIR packages and the wider trauma / tissue-injury literature.\n\n\nAcknowledgements\nCredits to the maintainers, communities, funders, and collaborators that make this work possible.\n\n\n\nCode on this site is released under the MIT licence. Editorial content is released under CC BY-SA 4.0."
+  },
+  {
+    "objectID": "references/tissue-injury.html",
+    "href": "references/tissue-injury.html",
+    "title": "References — Tissue injury",
+    "section": "",
+    "text": "Domain-specific reading list on tissue injury: mechanisms, repair, pathology, computational modelling."
+  },
+  {
+    "objectID": "references/tissue-injury.html#suggested-topics",
+    "href": "references/tissue-injury.html#suggested-topics",
+    "title": "References — Tissue injury",
+    "section": "Suggested topics",
+    "text": "Suggested topics\nA starting list of reading areas. Specific citations to be added over time.\n\nDamage-associated molecular patterns (DAMPs) and sterile inflammation.\nTissue regeneration versus fibrotic repair.\nHistopathology scoring systems and inter-rater variability.\nSpatial transcriptomics in injury contexts.\nComputational models of wound healing and repair dynamics.\n\nSee the disclaimer — this is a starting list, not a curated bibliography."
+  },
+  {
+    "objectID": "references/dimensionality-reduction.html",
+    "href": "references/dimensionality-reduction.html",
+    "title": "References — Dimensionality reduction",
+    "section": "",
+    "text": "Foundational and current literature on dimensionality reduction methods relevant to CTIR’s songR and adjacent packages: SONG, UMAP, t-SNE, PHATE, PCA."
+  },
+  {
+    "objectID": "references/dimensionality-reduction.html#suggested-reading",
+    "href": "references/dimensionality-reduction.html#suggested-reading",
+    "title": "References — Dimensionality reduction",
+    "section": "Suggested reading",
+    "text": "Suggested reading\n\nSONG — Tang et al. The primary method paper for the technique implemented in songR.\nUMAP — McInnes, Healy, Melville.\nt-SNE — van der Maaten and Hinton.\nPHATE — Moon et al.\nFoundational PCA references in the multivariate-analysis context.\n\nSee the disclaimer — this is a starting list, not a curated bibliography."
+  },
+  {
+    "objectID": "references/single-cell-and-cell-reports.html",
+    "href": "references/single-cell-and-cell-reports.html",
+    "title": "References — Single cell & cell reports",
+    "section": "",
+    "text": "Literature underpinning CTIR’s cellreportR and adjacent single-cell methods."
+  },
+  {
+    "objectID": "references/single-cell-and-cell-reports.html#suggested-reading",
+    "href": "references/single-cell-and-cell-reports.html#suggested-reading",
+    "title": "References — Single cell & cell reports",
+    "section": "Suggested reading",
+    "text": "Suggested reading\n\nSeurat — Hao et al., current edition.\nSingleCellExperiment and the Bioconductor single-cell stack — Amezquita et al., 2020.\nscran normalisation — Lun, McCarthy, Marioni, 2016.\nscater QC — McCarthy, Campbell, Lun, Wills, 2017.\nOrchestrating Single-Cell Analysis with Bioconductor (OSCA) — online book.\n\nSee the disclaimer — this is a starting list, not a curated bibliography."
+  },
+  {
+    "objectID": "references/reproducible-research.html",
+    "href": "references/reproducible-research.html",
+    "title": "References — Reproducible research",
+    "section": "",
+    "text": "Marwick, B., Boettiger, C., Mullen, L. Packaging Data Analytical Work Reproducibly Using R (and Friends). The American Statistician, 2018.\nLandau, W. M. The targets R package: a dynamic Make-like function-oriented pipeline toolkit. JOSS, 2021.\nSandve et al. Ten Simple Rules for Reproducible Computational Research. PLOS Computational Biology, 2013.\nWilson et al. Best Practices for Scientific Computing. PLOS Biology, 2014.\nQuarto — project documentation and methods notes.\n\nSee the disclaimer — this is a starting list, not a curated bibliography."
+  },
+  {
+    "objectID": "references/reproducible-research.html#suggested-reading",
+    "href": "references/reproducible-research.html#suggested-reading",
+    "title": "References — Reproducible research",
+    "section": "",
+    "text": "Marwick, B., Boettiger, C., Mullen, L. Packaging Data Analytical Work Reproducibly Using R (and Friends). The American Statistician, 2018.\nLandau, W. M. The targets R package: a dynamic Make-like function-oriented pipeline toolkit. JOSS, 2021.\nSandve et al. Ten Simple Rules for Reproducible Computational Research. PLOS Computational Biology, 2013.\nWilson et al. Best Practices for Scientific Computing. PLOS Biology, 2014.\nQuarto — project documentation and methods notes.\n\nSee the disclaimer — this is a starting list, not a curated bibliography."
+  },
+  {
+    "objectID": "references/tidyverse.html",
+    "href": "references/tidyverse.html",
+    "title": "References — Tidyverse",
+    "section": "",
+    "text": "The full tidyverse framework — the meta-package, its core members, and the surrounding r-lib toolchain that most modern R analyses lean on."
+  },
+  {
+    "objectID": "references/tidyverse.html#meta-and-design",
+    "href": "references/tidyverse.html#meta-and-design",
+    "title": "References — Tidyverse",
+    "section": "Meta and design",
+    "text": "Meta and design\n\nWickham et al. Welcome to the tidyverse. JOSS, 2019. The framing paper for the family.\nWickham, Çetinkaya-Rundel, Grolemund. R for Data Science (2nd ed.). O’Reilly, 2023. The canonical entry-point text."
+  },
+  {
+    "objectID": "references/tidyverse.html#core-packages",
+    "href": "references/tidyverse.html#core-packages",
+    "title": "References — Tidyverse",
+    "section": "Core packages",
+    "text": "Core packages\n\ndplyr — grammar of data manipulation.\ntidyr — tidy-data shape transformations.\nreadr — fast, friendly reading of rectangular data.\ntibble — modern reimagining of the data frame.\npurrr — functional programming with consistent type contracts.\nstringr — string manipulation, ICU-backed.\nforcats — tools for working with factors.\nggplot2 — grammar of graphics.\nlubridate — date and date-time arithmetic."
+  },
+  {
+    "objectID": "references/tidyverse.html#foundational-papers",
+    "href": "references/tidyverse.html#foundational-papers",
+    "title": "References — Tidyverse",
+    "section": "Foundational papers",
+    "text": "Foundational papers\n\nWickham. Tidy Data. Journal of Statistical Software, 2014. The conceptual basis for tidyr and the tidyverse data shape.\nWickham. A Layered Grammar of Graphics. Journal of Computational and Graphical Statistics, 2010. The basis for ggplot2."
+  },
+  {
+    "objectID": "references/tidyverse.html#adjacent-r-lib-toolchain",
+    "href": "references/tidyverse.html#adjacent-r-lib-toolchain",
+    "title": "References — Tidyverse",
+    "section": "Adjacent r-lib toolchain",
+    "text": "Adjacent r-lib toolchain\nThese are not part of the tidyverse meta-package but share its API conventions and maintainers:\n\nrlang — tidy-eval foundations.\nvctrs — typed vector primitives shared across the tidyverse.\nglue — string interpolation.\nfs — cross-platform filesystem operations.\nhttr2 — modern HTTP client.\n\nSee the disclaimer — this is a starting list, not a curated bibliography."
+  }
+]
