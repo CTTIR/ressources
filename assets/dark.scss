@@ -1,0 +1,36 @@
+/*-- scss:defaults --*/
+
+// Bootstrap variable overrides for darkly (dark) — pure-black palette
+$body-bg:           #000000;
+$body-color:        #e8e8e8;
+$link-color:        #79b8ff;
+$link-hover-color:  #b8d4fd;
+$primary:           #79b8ff;
+$border-color:      #1f1f1f;
+$secondary-bg:      #111111;
+$tertiary-bg:       #111111;
+$headings-color:    #f5f5f5;
+$font-family-sans-serif: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+$font-family-monospace:  'JetBrains Mono', monospace;
+$navbar-dark-color:        #e8e8e8;
+$navbar-dark-hover-color:  #79b8ff;
+$navbar-dark-active-color: #b8d4fd;
+$dropdown-link-color:       #e8e8e8;
+$dropdown-bg:               #000000;
+$dropdown-link-hover-bg:    #111111;
+$dropdown-link-hover-color: #79b8ff;
+
+/*-- scss:rules --*/
+
+:root {
+  --bg: #000000;
+  --fg: #e8e8e8;
+  --fg-alt: #a8a8a8;
+  --rule: #1f1f1f;
+  --surface: #111111;
+  --accent: #79b8ff;
+  --accent-hover: #b8d4fd;
+  --code-bg: #141414;
+}
+
+@import "_shared";

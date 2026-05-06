@@ -1,0 +1,180 @@
+/*-- scss:rules --*/
+
+// Shared layout — palette-free; tokens come from light.scss / dark.scss as
+// CSS custom properties on :root. Mirrors boulingua's structure.
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+
+html, body {
+  background: var(--bg) !important;
+  color: var(--fg);
+  font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-hover); text-decoration: underline; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+  color: var(--fg);
+  line-height: 1.25;
+}
+h1 { font-size: 2.1rem; margin-bottom: 0.5rem; }
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--rule);
+}
+h3 { font-size: 1.2rem; }
+
+code, pre, kbd, samp {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--code-bg);
+  color: var(--fg);
+}
+
+/* ----------- Navbar (force palette) ----------------------- */
+.navbar,
+.navbar.bg-light,
+.navbar.bg-dark,
+.navbar.fixed-top,
+.quarto-secondary-nav {
+  background: var(--bg) !important;
+  border-bottom: 1px solid var(--rule);
+}
+
+.navbar .navbar-title,
+.navbar-brand,
+.navbar .nav-link,
+.navbar .dropdown-item {
+  color: var(--fg) !important;
+}
+.navbar-brand,
+.navbar .navbar-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+}
+.navbar .nav-link:hover,
+.navbar .dropdown-item:hover {
+  color: var(--accent) !important;
+  background: var(--surface) !important;
+}
+.navbar .dropdown-menu {
+  background: var(--bg) !important;
+  border: 1px solid var(--rule);
+}
+
+/* ---- Tools (GitHub icon, color-scheme toggle, search) ---- */
+.navbar .quarto-navigation-tool,
+.navbar .quarto-navigation-tool:visited,
+.navbar .quarto-color-scheme-toggle,
+.navbar .quarto-color-scheme-toggle i,
+.navbar .quarto-navigation-tool i,
+.navbar #quarto-search,
+.navbar #quarto-search .aa-DetachedSearchButton,
+.navbar #quarto-search .aa-DetachedSearchButtonIcon,
+.navbar #quarto-search .aa-DetachedSearchButtonPlaceholder,
+.navbar #quarto-search button,
+.navbar #quarto-search a {
+  color: var(--fg) !important;
+  fill: var(--fg) !important;
+}
+.navbar .quarto-navigation-tool:hover,
+.navbar .quarto-navigation-tool:hover i,
+.navbar .quarto-color-scheme-toggle:hover i,
+.navbar #quarto-search:hover .aa-DetachedSearchButtonIcon {
+  color: var(--accent) !important;
+  fill: var(--accent) !important;
+}
+.navbar #quarto-search .aa-DetachedSearchButton {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+}
+.navbar #quarto-search .aa-DetachedSearchButton:hover {
+  border-color: var(--accent);
+}
+/* Search detached panel */
+.aa-DetachedOverlay {
+  background: rgba(0, 0, 0, 0.45);
+}
+.aa-DetachedContainer {
+  background: var(--bg);
+  color: var(--fg);
+}
+.aa-DetachedSearchButtonQuery,
+.aa-DetachedSearchButtonPlaceholder,
+.aa-Input {
+  color: var(--fg) !important;
+  background: var(--bg);
+}
+.aa-Form {
+  border-color: var(--rule) !important;
+  background: var(--surface) !important;
+}
+
+/* ----------- Footer --------------------------------------- */
+.nav-footer,
+.page-footer,
+footer.footer,
+footer {
+  background: var(--bg) !important;
+  border-top: 1px solid var(--rule);
+  color: var(--fg-alt);
+  font-size: 0.85rem;
+}
+.nav-footer a,
+.page-footer a {
+  color: var(--fg-alt);
+}
+.nav-footer a:hover,
+.page-footer a:hover {
+  color: var(--accent);
+}
+
+/* ----------- TOC ------------------------------------------ */
+#TOC, .sidebar, .quarto-sidebar-toc, #quarto-margin-sidebar {
+  background: var(--bg);
+  color: var(--fg-alt);
+}
+#TOC a, .sidebar a, #quarto-margin-sidebar a {
+  color: var(--fg-alt);
+}
+#TOC a:hover, #TOC a.active,
+.sidebar a:hover, .sidebar a.active {
+  color: var(--accent);
+}
+
+/* ----------- Tables --------------------------------------- */
+table {
+  font-size: 0.95rem;
+  color: var(--fg);
+}
+table thead {
+  border-bottom: 1px solid var(--rule);
+}
+table tr {
+  border-bottom: 1px solid var(--rule);
+}
+
+/* ----------- Resource entries (CTIR-specific) ------------- */
+.resource-entry {
+  margin-bottom: 1.25rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--accent);
+}
+.resource-entry .meta {
+  font-size: 0.86rem;
+  color: var(--fg-alt);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ----------- Callouts ------------------------------------- */
+.callout {
+  background: var(--surface);
+  border-color: var(--rule);
+}
