@@ -37,7 +37,17 @@ jobs:
       - name: Search for unresolved markers
         run: |
           set -e
-          if grep -RIn --include='*.qmd' --include='*.md' -E "TODO_IMPRESSUM|TODO_FILL_BEFORE_DEPLOY" . ; then
+          # Exclude PLAN.md and README.md — they *document* the gate by name.
+          # Filter out lines where the marker is wrapped in backticks: those
+          # are documentation references (e.g. references/index.qmd), not
+          # placeholders that need filling.
+          hits=$(grep -RIn --include='*.qmd' --include='*.md' \
+                   --exclude=PLAN.md --exclude=README.md \
+                   -E "TODO_IMPRESSUM|TODO_FILL_BEFORE_DEPLOY" . \
+                 | grep -vE '`TODO_(IMPRESSUM|FILL_BEFORE_DEPLOY)`' \
+                 || true)
+          if [ -n "$hits" ]; then
+            echo "$hits"
             echo "::error ::Unresolved TODO markers present — see PLAN.md. Deploy blocked."
             exit 1
           fi
