@@ -22,7 +22,6 @@ website:
 
   navbar:
     pinned: true
-    background: light
     left:
       - href: index.qmd
         text: Home
@@ -78,7 +77,6 @@ website:
         aria-label: GitHub repository
 
   page-footer:
-    background: light
     left: |
       © 2026 CTIR · Code [MIT](LICENSE) · Content [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
     center:
