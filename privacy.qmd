@@ -7,9 +7,18 @@ This site is a static website hosted on [GitHub Pages](https://pages.github.com/
 ## What this site does not do
 
 - **No cookies** are set by this site.
-- **No analytics** services are loaded (no Google Analytics, Plausible, Matomo, or similar).
-- **No tracking pixels**, fingerprinting, or third-party scripts beyond the static assets needed to render the page.
+- **No tracking pixels**, fingerprinting, or third-party advertising scripts.
 - **No newsletter, no contact form, no account system.** There is nothing to opt into.
+
+## Analytics
+
+This site uses [Plausible Analytics](https://plausible.io/), a privacy-friendly, cookieless web-analytics service self-hosted at `analytics.hellebo.de`. Plausible:
+
+- does **not** use cookies and does **not** persist any identifier in the browser;
+- does **not** collect personal data, cross-site profiles, or device fingerprints;
+- aggregates page views, referrers, and outbound-link clicks at the request level only.
+
+The processed data are anonymised aggregates used to understand which pages are useful. Disable JavaScript or use a content blocker to opt out.
 
 ## What GitHub Pages does
 

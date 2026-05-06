@@ -91,6 +91,8 @@ website:
 
 format:
   html:
+    include-in-header:
+      - assets/plausible.html
     theme:
       light: [cosmo, assets/light.scss]
       dark: [darkly, assets/dark.scss]
