@@ -92,9 +92,8 @@ website:
 format:
   html:
     theme:
-      light: [cosmo, styles.scss]
-      dark: [darkly, styles.scss]
-    css: styles.scss
+      light: [cosmo, assets/light.scss]
+      dark: [darkly, assets/dark.scss]
     toc: true
     toc-depth: 3
     toc-location: right
