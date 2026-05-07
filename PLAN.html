@@ -263,6 +263,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#divergences-from-boulingua" id="toc-divergences-from-boulingua" class="nav-link" data-scroll-target="#divergences-from-boulingua">Divergences from boulingua</a></li>
   <li><a href="#expected-first-build-state" id="toc-expected-first-build-state" class="nav-link" data-scroll-target="#expected-first-build-state">Expected first-build state</a></li>
+  <li><a href="#recon-landing-avatar-linked-ressources-h1-branch-featlanding-avatar" id="toc-recon-landing-avatar-linked-ressources-h1-branch-featlanding-avatar" class="nav-link" data-scroll-target="#recon-landing-avatar-linked-ressources-h1-branch-featlanding-avatar">Recon — landing avatar + linked <code>#ressources</code> H1 (branch <code>feat/landing-avatar</code>)</a>
+  <ul class="collapse">
+  <li><a href="#index.qmd" id="toc-index.qmd" class="nav-link" data-scroll-target="#index.qmd"><code>index.qmd</code></a></li>
+  <li><a href="#quarto.yml" id="toc-quarto.yml" class="nav-link" data-scroll-target="#quarto.yml"><code>_quarto.yml</code></a></li>
+  <li><a href="#sister-repo-reference-cttirtutorials" id="toc-sister-repo-reference-cttirtutorials" class="nav-link" data-scroll-target="#sister-repo-reference-cttirtutorials">Sister-repo reference (<code>CTTIR/tutorials</code>)</a></li>
+  <li><a href="#decisions" id="toc-decisions" class="nav-link" data-scroll-target="#decisions">Decisions</a></li>
+  <li><a href="#files-to-touch" id="toc-files-to-touch" class="nav-link" data-scroll-target="#files-to-touch">Files to touch</a></li>
+  <li><a href="#open-question-to-flag-at-handoff" id="toc-open-question-to-flag-at-handoff" class="nav-link" data-scroll-target="#open-question-to-flag-at-handoff">Open question to flag at handoff</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/CTTIR/ressources/edit/main/PLAN.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/CTTIR/ressources/blob/main/PLAN.md" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/CTTIR/ressources/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -355,8 +364,60 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Possibly DOI check if any DOIs are added before verification — currently bib is minimal</li>
 </ul>
 <p>This is the documented expected state until Raban fills placeholders.</p>
+<hr>
+</section>
+<section id="recon-landing-avatar-linked-ressources-h1-branch-featlanding-avatar" class="level2">
+<h2 class="anchored" data-anchor-id="recon-landing-avatar-linked-ressources-h1-branch-featlanding-avatar">Recon — landing avatar + linked <code>#ressources</code> H1 (branch <code>feat/landing-avatar</code>)</h2>
+<section id="index.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="index.qmd"><code>index.qmd</code></h3>
+<ul>
+<li>H1 source: page YAML <code>title: "#ressources"</code> (line 2). No explicit body H1.</li>
+<li><code>subtitle: "A curated hub for computational biomedical research"</code> is also YAML-driven (line 3) — rendered inside Quarto’s title block alongside the H1.</li>
+<li><code>toc: false</code>, <code>page-layout: full</code>. No <code>title-block-style</code> override.</li>
+<li>Body starts with prose paragraphs, then <code>## Sections</code> grid, then a horizontal rule and licence line.</li>
+</ul>
+</section>
+<section id="quarto.yml" class="level3">
+<h3 class="anchored" data-anchor-id="quarto.yml"><code>_quarto.yml</code></h3>
+<ul>
+<li>Site <code>title: "#ressources"</code> (line 12) becomes the navbar brand. The first navbar entry is <code>Home → index.qmd</code> (lines 26–27). Both untouched by this change.</li>
+<li>Theme wires <code>assets/light.scss</code> / <code>assets/dark.scss</code>, both of which <code>@import "_shared.scss"</code> (~181 lines).</li>
+</ul>
+</section>
+<section id="sister-repo-reference-cttirtutorials" class="level3">
+<h3 class="anchored" data-anchor-id="sister-repo-reference-cttirtutorials">Sister-repo reference (<code>CTTIR/tutorials</code>)</h3>
+<ul>
+<li><p><code>tutorials/index.qmd</code> puts the avatar inside a <code>::: {.hero}</code> block, uses a fenced <code>{=html}</code> raw block for the anchor, and writes the linked H1 as <code># [#tutorials](https://cttir.github.io/tutorials/)</code>. Title block is suppressed via <code>title-block-style: none</code> in YAML. The subtitle equivalent is a <code>::: {.lead}</code> div (no YAML <code>subtitle:</code> there).</p></li>
+<li><p><code>tutorials/assets/_shared.scss:205–220</code> holds the avatar CSS — verbatim block to mirror:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode scss code-with-copy"><code class="sourceCode scss"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.ctir-avatar-link</span> { <span class="kw">display</span>: <span class="dv">inline-block</span><span class="op">;</span> <span class="kw">margin-bottom</span>: <span class="dv">0.5</span><span class="dt">rem</span><span class="op">;</span> }</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">.ctir-avatar</span> { <span class="kw">width</span>: <span class="dv">56</span><span class="dt">px</span><span class="op">;</span> <span class="kw">height</span>: <span class="dv">56</span><span class="dt">px</span><span class="op">;</span> <span class="kw">border-radius</span>: <span class="dv">8</span><span class="dt">px</span><span class="op">;</span> <span class="kw">object-fit</span>: <span class="dv">cover</span><span class="op">;</span> <span class="kw">display</span>: <span class="dv">block</span><span class="op">;</span> }</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">.hero</span> h1 a<span class="op">,</span> <span class="fu">.hero</span> h1 a<span class="in">:hover</span> { <span class="kw">color</span>: <span class="bu">inherit</span><span class="op">;</span> <span class="kw">text-decoration</span>: <span class="dv">none</span><span class="op">;</span> }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+</section>
+<section id="decisions" class="level3">
+<h3 class="anchored" data-anchor-id="decisions">Decisions</h3>
+<ol type="1">
+<li><p><strong>Title surface</strong>: H1 is YAML-driven, so per step 2 of the brief, remove <code>title:</code> from <code>index.qmd</code> YAML and write the H1 explicitly in the body as <code># [#ressources](https://cttir.github.io/ressources/)</code>.</p></li>
+<li><p><strong>Subtitle handling</strong> (the wrinkle): <code>subtitle:</code> in YAML renders inside Quarto’s auto-generated title block, which becomes empty/awkward once <code>title:</code> is gone. Plan: suppress the title block (<code>title-block-style: none</code>) and move the subtitle text into the body as <code>::: {.lead}</code> — same wording, same place on the page, just rendered from body markup. Mirrors tutorials/courses for visual consistency. Reading “do not modify the subtitle” as text-preserving, not YAML-location-preserving.</p></li>
+<li><p><strong>Avatar markup</strong>: raw HTML inside a fenced <code>{=html}</code> block at the top of the body, with the exact tutorials wording (comment, <code>aria-label</code>, alt text, classes). Cross-site URL <code>https://cttir.github.io/website/images/cttir-logo.png</code> referenced live — not copied.</p></li>
+<li><p><strong>Wrapper</strong>: <code>::: {.hero}</code> block around avatar + H1 + lead, matching tutorials. Keep existing prose paragraphs and <code>## Sections</code> grid below, untouched.</p></li>
+<li><p><strong>CSS</strong>: append the three rules to <code>assets/_shared.scss</code> so both light and dark themes pick them up. Palette-free, no per-theme tweaks.</p></li>
+</ol>
+</section>
+<section id="files-to-touch" class="level3">
+<h3 class="anchored" data-anchor-id="files-to-touch">Files to touch</h3>
+<ul>
+<li><code>index.qmd</code> — drop <code>title:</code> from YAML, add <code>title-block-style: none</code>, prepend <code>.hero</code> block with avatar + linked H1 + <code>.lead</code> subtitle.</li>
+<li><code>assets/_shared.scss</code> — append avatar CSS rules (mirror tutorials verbatim).</li>
+<li><code>_quarto.yml</code> — <strong>no changes</strong>.</li>
+</ul>
+</section>
+<section id="open-question-to-flag-at-handoff" class="level3">
+<h3 class="anchored" data-anchor-id="open-question-to-flag-at-handoff">Open question to flag at handoff</h3>
+<p>The brief shows a simpler markup (no <code>.hero</code>, no <code>.lead</code> wrapper) in its inline example (step 3). Tutorials uses the richer wrapper. Mirroring tutorials wins on the “visual consistency across sister sites” rule, so going with the wrapper. If the bare version is preferred, easy to strip back.</p>
 
 
+</section>
 </section>
 </section>
 
