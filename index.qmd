@@ -1,9 +1,27 @@
 ---
-title: "#ressources"
-subtitle: "A curated hub for computational biomedical research"
 toc: false
 page-layout: full
+title-block-style: none
 ---
+
+::: {.hero}
+
+<!-- Cross-site logo: source lives in CTTIR/website. Update there to propagate. -->
+```{=html}
+<a href="https://cttir.github.io/website/" class="ctir-avatar-link" aria-label="CTIR home">
+  <img src="https://cttir.github.io/website/images/cttir-logo.png"
+       alt="CTIR — Computational Trauma and Tissue Injury Research"
+       class="ctir-avatar" />
+</a>
+```
+
+# [#ressources](https://cttir.github.io/ressources/)
+
+::: {.lead}
+A curated hub for computational biomedical research
+:::
+
+:::
 
 This site is a hand-picked, editorially reviewed collection of tools, packages, datasets, and reading material relevant to **CTIR — Computational Trauma and Tissue Injury Research**. It is not an aggregator and not auto-generated. Every entry was selected because it earned its place.
 
