@@ -76,3 +76,49 @@ Locally `quarto render` should succeed. CI will **fail intentionally** on:
 - Possibly DOI check if any DOIs are added before verification — currently bib is minimal
 
 This is the documented expected state until Raban fills placeholders.
+
+---
+
+## Recon — landing avatar + linked `#ressources` H1 (branch `feat/landing-avatar`)
+
+### `index.qmd`
+- H1 source: page YAML `title: "#ressources"` (line 2). No explicit body H1.
+- `subtitle: "A curated hub for computational biomedical research"` is also YAML-driven (line 3) — rendered inside Quarto's title block alongside the H1.
+- `toc: false`, `page-layout: full`. No `title-block-style` override.
+- Body starts with prose paragraphs, then `## Sections` grid, then a horizontal rule and licence line.
+
+### `_quarto.yml`
+- Site `title: "#ressources"` (line 12) becomes the navbar brand. The first navbar entry is `Home → index.qmd` (lines 26–27). Both untouched by this change.
+- Theme wires `assets/light.scss` / `assets/dark.scss`, both of which `@import "_shared.scss"` (~181 lines).
+
+### Sister-repo reference (`CTTIR/tutorials`)
+- `tutorials/index.qmd` puts the avatar inside a `::: {.hero}` block, uses a fenced `{=html}` raw block for the anchor, and writes the linked H1 as `# [#tutorials](https://cttir.github.io/tutorials/)`. Title block is suppressed via `title-block-style: none` in YAML. The subtitle equivalent is a `::: {.lead}` div (no YAML `subtitle:` there).
+- `tutorials/assets/_shared.scss:205–220` holds the avatar CSS — verbatim block to mirror:
+  ```scss
+  .ctir-avatar-link { display: inline-block; margin-bottom: 0.5rem; }
+  .ctir-avatar { width: 56px; height: 56px; border-radius: 8px; object-fit: cover; display: block; }
+  .hero h1 a, .hero h1 a:hover { color: inherit; text-decoration: none; }
+  ```
+
+### Decisions
+
+1. **Title surface**: H1 is YAML-driven, so per step 2 of the brief, remove `title:` from `index.qmd` YAML and write the H1 explicitly in the body as `# [#ressources](https://cttir.github.io/ressources/)`.
+
+2. **Subtitle handling** (the wrinkle): `subtitle:` in YAML renders inside Quarto's auto-generated title block, which becomes empty/awkward once `title:` is gone. Plan: suppress the title block (`title-block-style: none`) and move the subtitle text into the body as `::: {.lead}` — same wording, same place on the page, just rendered from body markup. Mirrors tutorials/courses for visual consistency. Reading "do not modify the subtitle" as text-preserving, not YAML-location-preserving.
+
+3. **Avatar markup**: raw HTML inside a fenced `{=html}` block at the top of the body, with the exact tutorials wording (comment, `aria-label`, alt text, classes). Cross-site URL `https://cttir.github.io/website/images/cttir-logo.png` referenced live — not copied.
+
+4. **Wrapper**: `::: {.hero}` block around avatar + H1 + lead, matching tutorials. Keep existing prose paragraphs and `## Sections` grid below, untouched.
+
+5. **CSS**: append the three rules to `assets/_shared.scss` so both light and dark themes pick them up. Palette-free, no per-theme tweaks.
+
+### Files to touch
+
+- `index.qmd` — drop `title:` from YAML, add `title-block-style: none`, prepend `.hero` block with avatar + linked H1 + `.lead` subtitle.
+- `assets/_shared.scss` — append avatar CSS rules (mirror tutorials verbatim).
+- `_quarto.yml` — **no changes**.
+
+### Open question to flag at handoff
+
+The brief shows a simpler markup (no `.hero`, no `.lead` wrapper) in its inline example (step 3). Tutorials uses the richer wrapper. Mirroring tutorials wins on the "visual consistency across sister sites" rule, so going with the wrapper. If the bare version is preferred, easy to strip back.
+
