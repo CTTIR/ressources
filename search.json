@@ -585,7 +585,7 @@
     "href": "index.html",
     "title": "#ressources",
     "section": "",
-    "text": "This site is a hand-picked, editorially reviewed collection of tools, packages, datasets, and reading material relevant to CTIR — Computational Trauma and Tissue Injury Research. It is not an aggregator and not auto-generated. Every entry was selected because it earned its place.\nThe focus is on open, reproducible, peer-reviewed work in R packaging, multi-omics, statistical modelling, and the broader ecosystem that supports trauma and tissue-injury research."
+    "text": "A curated hub for computational biomedical research\nThis site is a hand-picked, editorially reviewed collection of tools, packages, datasets, and reading material relevant to CTIR — Computational Trauma and Tissue Injury Research. It is not an aggregator and not auto-generated. Every entry was selected because it earned its place.\nThe focus is on open, reproducible, peer-reviewed work in R packaging, multi-omics, statistical modelling, and the broader ecosystem that supports trauma and tissue-injury research."
   },
   {
     "objectID": "index.html#sections",
