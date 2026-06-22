@@ -8,3 +8,8 @@
 *.Rproj
 .DS_Store
 node_modules/
+*.tmp
+*.log
+*~
+*.bak
+*.orig
