@@ -61,7 +61,9 @@ jobs:
   link-check:
     name: External link check
     runs-on: ubuntu-latest
-    continue-on-error: false
+    # Advisory: external academic hosts (glmnet.stanford.edu, ensembl.org, ...)
+    # intermittently time out or rate-limit. Report them, but don't block CI.
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
       - name: lychee
@@ -70,6 +72,8 @@ jobs:
           args: >-
             --no-progress
             --max-concurrency 8
+            --max-retries 3
+            --timeout 30
             --accept 200,206,301,302,403,429
             './**/*.qmd' './**/*.md'
           fail: true
