@@ -1,0 +1,45 @@
+name: refresh-inventory
+
+# Keeps _data/cttir-repos.json fresh so the ci "inventory-freshness" gate
+# (<= 30 days) never lapses. Runs weekly and on demand; commits only when the
+# regenerated inventory actually differs.
+
+on:
+  schedule:
+    # Mondays at 06:00 UTC — comfortably inside the 30-day freshness window.
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    name: Refresh CTTIR repo inventory
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.4'
+          use-public-rspm: true
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::jsonlite
+      - name: Regenerate inventory
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: Rscript scripts/fetch-cttir-repos.R
+      - name: Commit if changed
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- _data/cttir-repos.json; then
+            echo "Inventory unchanged — nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/cttir-repos.json
+          git commit -m "Refresh CTTIR repo inventory"
+          git push
