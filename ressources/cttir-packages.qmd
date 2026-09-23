@@ -1,8 +1,22 @@
 ---
-title: "CTIR packages"
+title: "CTTIR packages & repositories"
 ---
 
-Every public R package in the [CTTIR](https://github.com/CTTIR) GitHub organization. Rendered from `_data/cttir-repos.json`, which is refreshed by `scripts/fetch-cttir-repos.R` and validated in CI.
+Public repositories in the [CTTIR](https://github.com/CTTIR) GitHub organisation,
+reviewed on **23 September 2026**. The inventory contains **38 public repositories**.
+Tables are rendered from `_data/cttir-repos.json`, refreshed by
+`scripts/fetch-cttir-repos.R` and validated in CI.
+
+`cellspecR` and `gatekeepR` are 1.0.0 release candidates; `bloodspottR` is
+experimental; `brainwritR` is a development R/Shiny application. The current
+`shinylaunchR` 0.2.0-rc.1 candidate is unpublished, following its 0.1.0 GitHub
+release. `qupflowR` and `cttir.r-universe.dev` are currently empty placeholders.
+See the [organisation profile](https://github.com/CTTIR) for the curated overview.
+
+## R repositories
+
+GitHub's primary-language classification is used here; it includes R applications
+and does not establish package maturity or CRAN availability.
 
 ```{r}
 #| label: cttir-packages-table
@@ -53,6 +67,20 @@ df <- data.frame(
 )
 
 knitr::kable(df, format = "markdown")
+```
+
+## Other repositories
+
+```{r}
+#| label: cttir-other-repositories
+#| echo: false
+other <- Filter(function(r) !(r$name %in% vapply(pkgs, function(p) p$name, character(1))), repos)
+other <- other[order(vapply(other, function(r) r$name, character(1)))]
+knitr::kable(data.frame(
+  Repository = vapply(other, function(r) sprintf("[`%s`](%s)", r$name, r$html_url), character(1)),
+  Description = vapply(other, format_desc, character(1)),
+  check.names = FALSE
+), format = "markdown")
 ```
 
 ## Notes

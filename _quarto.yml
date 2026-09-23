@@ -32,7 +32,7 @@ website:
           - href: ressources/index.qmd
             text: Overview
           - href: ressources/cttir-packages.qmd
-            text: CTIR packages
+            text: CTTIR packages & repositories
           - href: ressources/r-ecosystem.qmd
             text: R ecosystem
           - href: ressources/reproducibility.qmd
