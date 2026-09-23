@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CTIR packages – #ressources</title>
+<title>CTTIR packages &amp; repositories – #ressources</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -109,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../ressources/cttir-packages.html">
- <span class="dropdown-text">CTIR packages</span></a>
+ <span class="dropdown-text">CTTIR packages &amp; repositories</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../ressources/r-ecosystem.html">
@@ -216,7 +216,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#notes" id="toc-notes" class="nav-link active" data-scroll-target="#notes">Notes</a></li>
+  <li><a href="#r-repositories" id="toc-r-repositories" class="nav-link active" data-scroll-target="#r-repositories">R repositories</a></li>
+  <li><a href="#other-repositories" id="toc-other-repositories" class="nav-link" data-scroll-target="#other-repositories">Other repositories</a></li>
+  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/CTTIR/ressources/edit/main/ressources/cttir-packages.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/CTTIR/ressources/blob/main/ressources/cttir-packages.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/CTTIR/ressources/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -225,7 +227,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">CTIR packages</h1>
+<h1 class="title">CTTIR packages &amp; repositories</h1>
 </div>
 
 
@@ -242,7 +244,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Every public R package in the <a href="https://github.com/CTTIR">CTTIR</a> GitHub organization. Rendered from <code>_data/cttir-repos.json</code>, which is refreshed by <code>scripts/fetch-cttir-repos.R</code> and validated in CI.</p>
+<p>Public repositories in the <a href="https://github.com/CTTIR">CTTIR</a> GitHub organisation, reviewed on <strong>23 September 2026</strong>. The inventory contains <strong>38 public repositories</strong>. Tables are rendered from <code>_data/cttir-repos.json</code>, refreshed by <code>scripts/fetch-cttir-repos.R</code> and validated in CI.</p>
+<p><code>cellspecR</code> and <code>gatekeepR</code> are 1.0.0 release candidates; <code>bloodspottR</code> is experimental; <code>brainwritR</code> is a development R/Shiny application. The current <code>shinylaunchR</code> 0.2.0-rc.1 candidate is unpublished, following its 0.1.0 GitHub release. <code>qupflowR</code> and <code>cttir.r-universe.dev</code> are currently empty placeholders. See the <a href="https://github.com/CTTIR">organisation profile</a> for the curated overview.</p>
+<section id="r-repositories" class="level2">
+<h2 class="anchored" data-anchor-id="r-repositories">R repositories</h2>
+<p>GitHub’s primary-language classification is used here; it includes R applications and does not establish package maturity or CRAN availability.</p>
 <div class="cell">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
@@ -256,16 +262,40 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/annotatR"><code>annotatR</code></a></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="https://cttir.github.io/annotatR/">site</a></td>
+</tr>
+<tr class="even">
 <td style="text-align: left;"><a href="https://github.com/CTTIR/bambamR"><code>bambamR</code></a></td>
 <td style="text-align: left;">R package for streamlined RNA-seq analysis pipelines — from count matrices to publication-ready results</td>
 <td style="text-align: left;">—</td>
 <td style="text-align: left;"><a href="https://cttir.github.io/bambamR/">site</a></td>
 </tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/bloodspottR"><code>bloodspottR</code></a></td>
+<td style="text-align: left;">Calibrated histology burden, traceable review, and Shiny result exploration in R</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="https://cttir.github.io/bloodspottR/">site</a></td>
+</tr>
 <tr class="even">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/brainwritR"><code>brainwritR</code></a></td>
+<td style="text-align: left;">Resilient classroom brainwriting with a Shiny app, SQLite persistence, and mobile reconnect support</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="https://cttir.github.io/brainwritR/">site</a></td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;"><a href="https://github.com/CTTIR/cellreportR"><code>cellreportR</code></a></td>
 <td style="text-align: left;">—</td>
 <td style="text-align: left;">—</td>
 <td style="text-align: left;"><a href="https://cttir.github.io/cellreportR/">site</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/cellspecR"><code>cellspecR</code></a></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="https://github.com/CTTIR/cuvis.r"><code>cuvis.r</code></a></td>
@@ -280,16 +310,28 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;"><a href="https://cttir.github.io/dynasimR/">site</a></td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/gatekeepR"><code>gatekeepR</code></a></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;"><a href="https://github.com/CTTIR/harbouR"><code>harbouR</code></a></td>
 <td style="text-align: left;">—</td>
 <td style="text-align: left;">—</td>
 <td style="text-align: left;"><a href="https://cttir.github.io/harbouR/">site</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;"><a href="https://github.com/CTTIR/hexmakR"><code>hexmakR</code></a></td>
 <td style="text-align: left;">R package for generating polished hex sticker logos for R packages using customizable templates</td>
 <td style="text-align: left;">—</td>
 <td style="text-align: left;"><a href="https://cttir.github.io/hexmakR/">site</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/hyperspectaculR"><code>hyperspectaculR</code></a></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="https://github.com/CTTIR/hyperspectR"><code>hyperspectR</code></a></td>
@@ -358,6 +400,12 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;"><a href="https://cttir.github.io/songR/">site</a></td>
 </tr>
 <tr class="even">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/tivis.r"><code>tivis.r</code></a></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;"><a href="https://github.com/CTTIR/zhncommandR"><code>zhncommandR</code></a></td>
 <td style="text-align: left;">—</td>
 <td style="text-align: left;">—</td>
@@ -367,6 +415,76 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </div>
 </div>
+</section>
+<section id="other-repositories" class="level2">
+<h2 class="anchored" data-anchor-id="other-repositories">Other repositories</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Repository</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/.github"><code>.github</code></a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/argus-one"><code>argus-one</code></a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/attaclone-dedup"><code>attaclone-dedup</code></a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/courses"><code>courses</code></a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/cttir.r-universe.dev"><code>cttir.r-universe.dev</code></a></td>
+<td style="text-align: left;">Package registry for the CTTIR r-universe</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/metadata-mender"><code>metadata-mender</code></a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/pwa-quest"><code>pwa-quest</code></a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/qupflowR"><code>qupflowR</code></a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/ressources"><code>ressources</code></a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/shinylaunchR"><code>shinylaunchR</code></a></td>
+<td style="text-align: left;">Launch-ready Shiny app scaffolding for reproducible biomedical research dashboards.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/themakR"><code>themakR</code></a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/tutorials"><code>tutorials</code></a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com/CTTIR/website"><code>website</code></a></td>
+<td style="text-align: left;">—</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
 <section id="notes" class="level2">
 <h2 class="anchored" data-anchor-id="notes">Notes</h2>
 <ul>
